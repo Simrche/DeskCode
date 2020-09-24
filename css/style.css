@@ -14,4 +14,7 @@ p
 {
 	margin: 10px;
 }
-
+.demo{
+	display: flex;
+	justify-content: center;
+}
