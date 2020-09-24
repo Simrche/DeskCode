@@ -7,7 +7,7 @@
 h1
 {
 	text-align: center;
-	color: blue;
+	color: red;
 }
 
 p
@@ -15,17 +15,7 @@ p
 	margin: 10px;
 }
 
-.membres {
-	margin-top: 25px;
+.demo{
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
+	justify-content: center;
 }
-
-h1, h2 {
-	margin-top: 25px;
-}
-
-
-
