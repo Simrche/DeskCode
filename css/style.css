@@ -16,7 +16,11 @@ p
 }
 
 .list li{
-	margin: 1%;
-	padding: 1%;
+	margin: 2%;
+}
+
+.demo{
+	display: flex;
+	justify-content: center;
 }
 
