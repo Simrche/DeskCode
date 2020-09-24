@@ -15,7 +15,12 @@ p
 	margin: 10px;
 }
 
+.list li{
+	margin: 2%;
+}
+
 .demo{
 	display: flex;
 	justify-content: center;
 }
+
