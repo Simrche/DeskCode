@@ -4,3 +4,14 @@
 	padding: 0px;
 }
 
+h1
+{
+	text-align: center;
+	color: blue;
+}
+
+p
+{
+	margin: 10px;
+}
+
