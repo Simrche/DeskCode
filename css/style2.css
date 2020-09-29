@@ -7,10 +7,11 @@ header{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    align-items: center;
     background-color: #484848;
 }
 header img{
-    width: 2%;
+    width: 40px;
 }
 header *{
     /* padding-top: 2vh; */
@@ -25,6 +26,7 @@ textarea{
 .compte{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .compte img{
