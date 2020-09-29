@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: #484848;
+}
+header img{
+    width: 2%;
+}
+header *{
+    /* padding-top: 2vh; */
+    margin-left: 1vh;
+}
+
+textarea{
+    border-radius: 2vh;
+    background-color: #656565;
+}
+
+.compte{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.compte img{
+    width: 5%;
+}
+
+.records{
+    background-color: #585858;
+    
+}
+
+.records .lastest{
+    display: flex;
+    margin-left: 10%;
+}
+.records .last{
+    display: flex;
+    flex-direction: column;
+}
+
+.records img{
+    width: 60%;
+    border-radius: 2vh;
+} 
+
+.new{
+    background-color: #484848;
+}
+
+.brac{
+    display: flex;
+    flex-flow: wrap row;
+}
+
+.brac a{
+    width: 30%;
+    height: 30vh;
+    margin: 1%;
+    border-radius: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.brac a{
+    text-decoration: none;
+    color: white;
+}
+
+.brac1{
+    background-color: #ff5353;
+    
+}
+.brac2{
+    background-color: #ff9557;
+}
+.brac3{
+    background-color: #53ff7c;
+}
+.brac4{
+    background-color: #53a3ff;
+}
+.bracNew{
+    background-color: #ff53ba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

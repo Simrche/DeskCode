@@ -19,8 +19,13 @@ p
 	margin: 2%;
 }
 
+.membres{
+	border: dashed red;
+}
+
 .demo{
 	display: flex;
 	justify-content: center;
+	border: dashed red;
 }
 
