@@ -29,15 +29,3 @@ p
 	border: dashed red;
 }
 
-
-/* ------------------------ SIMON.HTML -------------------------*/
-
-#presentationSimon {
-	text-align: center;
-}
-
-#presentationSimon h1 {
-	color: white;
-	background-color: red;
-}
-
