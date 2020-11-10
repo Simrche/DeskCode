@@ -5,14 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style2.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-        <title>Document</title>
+        <title>Accueil</title>
     </head>
 
     <body>
 
         <header>
             <div id="headerPartie1">
-                <a href="index.php"><img src="img/logoLdvEsport.png" alt="Logo ldv"></a>
                 <input list="jeu" type="text" id="choix_jeu" placeholder="Choisir un jeu" name="game">
                 <datalist id="jeu">
                     <option value="League of Legends">
@@ -21,10 +20,10 @@
                     <option value="FIFA 21">
                 </datalist>
             </div>
-            <input type="search" id="search_bar" placeholder="Rechercher un tournoi">
+            <a class="logo" href="index.php"><img src="img/logoLdvEsport.png" alt="logo_LDV" title="logo_LDV"></a>
             <div id="log">
-                <a href="#">Se connecter</a>
-                <a href="#">S'inscrire</a>
+                <p>Se connecter</p>
+                <p>S'inscrire</p>
             </div>
         </header>
 
@@ -47,7 +46,9 @@
         </section>
 
         <footer>
-            
+            <a href="#"><img src="#" alt="#" title="#"></a>
+            <a href="#"><img src="#" alt="#" title="#"></a>
+            <a href="#"><img src="#" alt="#" title="#"></a>
         </footer>
         
     </body>
