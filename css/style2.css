@@ -15,18 +15,21 @@ header {
 #headerPartie1 {
     display: flex;
     align-items: center;
-    margin-left: 25px;
+    padding-left: 2%;
 }
 
 header img {
     width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #choix_jeu {
-    width: 200px;
+    width: 100%;
     height: 30px;
-    border: none;
-    padding-left: 10px;
+    padding-left: 10%;
+    border-radius: 10px;
 }
 
 #search_bar {
@@ -37,11 +40,14 @@ header img {
 }
 
 #log {
-    margin-right: 25px;
+    padding-right: 2%;
+    display: flex;
 }
 
-#log a {
+#log p {
     border: black 2px solid;
+    border-radius: 10px;
+    text-align: center;
     background-color: white;
     color: black;
     padding: 10px 20px;
@@ -106,12 +112,17 @@ footer {
 
 .records{
     background-color: #585858;
-    
+}
+
+.records h2, .new h2 {
+    padding: 25px 0 25px 25px;
+    color: white;
 }
 
 .records .lastest{
     display: flex;
-    margin-left: 10%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .records .last{
     display: flex;
@@ -119,9 +130,15 @@ footer {
 }
 
 .records img{
-    width: 60%;
+    width: 500px;
     border-radius: 2vh;
-} 
+    padding: 0 25px;
+}
+
+.last p {
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
 
 .new{
     background-color: #484848;
@@ -130,11 +147,12 @@ footer {
 .brac{
     display: flex;
     flex-flow: wrap row;
+    justify-content: center;
 }
 
 .brac a{
-    width: 30%;
-    height: 30vh;
+    width: 500px;
+    height: 300px;
     margin: 1%;
     border-radius: 2vh;
     display: flex;
@@ -165,5 +183,14 @@ footer {
     background-color: #ff53ba;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+/* --------------------------------------------------FOOTER-------------------------------------------------- */
+
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
