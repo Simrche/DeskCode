@@ -138,6 +138,8 @@ footer {
 .last p {
     margin-left: 25px;
     padding-bottom: 20px;
+    margin-top: 10px;
+    color: white;
 }
 
 .new{
