@@ -36,7 +36,7 @@
         <section id="allGame">
             <h1>Les jeux</h1>
             <div>
-                <a href="#">Jeu 1</a>
+                <a href="LoL.php">League of Legends</a>
                 <a href="#">Jeu 2</a>
                 <a href="#">Jeu 3</a>
                 <a href="#">Jeu 4</a>
