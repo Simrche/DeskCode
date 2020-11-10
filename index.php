@@ -37,9 +37,9 @@
             <h1>Les jeux</h1>
             <div>
                 <a href="LoL.php">League of Legends</a>
-                <a href="#">Jeu 2</a>
-                <a href="#">Jeu 3</a>
-                <a href="#">Jeu 4</a>
+                <a href="#">Rocket League</a>
+                <a href="#">CS:GO</a>
+                <a href="#">FIFA 21</a>
                 <a href="#">Jeu 5</a>
                 <a href="#">Jeu 6</a>
             </div>
