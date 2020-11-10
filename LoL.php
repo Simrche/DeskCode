@@ -53,6 +53,9 @@
         </div>
     </main>
     <footer></footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/6e19d1f268.js" crossorigin="anonymous"></script>
 </body>
 </html>
