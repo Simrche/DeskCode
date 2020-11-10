@@ -112,12 +112,17 @@ footer {
 
 .records{
     background-color: #585858;
-    
+}
+
+.records h2, .new h2 {
+    padding: 25px 0 25px 25px;
+    color: white;
 }
 
 .records .lastest{
     display: flex;
-    margin-left: 10%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .records .last{
     display: flex;
@@ -125,9 +130,15 @@ footer {
 }
 
 .records img{
-    width: 60%;
+    width: 500px;
     border-radius: 2vh;
-} 
+    padding: 0 25px;
+}
+
+.last p {
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
 
 .new{
     background-color: #484848;
@@ -136,11 +147,12 @@ footer {
 .brac{
     display: flex;
     flex-flow: wrap row;
+    justify-content: center;
 }
 
 .brac a{
-    width: 30%;
-    height: 30vh;
+    width: 500px;
+    height: 300px;
     margin: 1%;
     border-radius: 2vh;
     display: flex;

@@ -7,19 +7,25 @@
     <title>LDV E-sport</title>
 </head>
 <body>
-    <header>
-        <i class="fas fa-align-justify"></i>
-        <img src="img/logoLdvEsport.png" alt="">
-        <p>league of legends</p>
-        <textarea name="" id="" cols="55" rows="0"></textarea>
-        <div class="compte">
-            <p>Bonjour, LDV_Admin</p>
-            <img src="img/pdpLdv.png" alt="">
-        </div>
-    </header>
+        <header>
+            <div id="headerPartie1">
+                <input list="jeu" type="text" id="choix_jeu" placeholder="Choisir un jeu" name="game">
+                <datalist id="jeu">
+                    <option value="League of Legends">
+                    <option value="Rocket League">
+                    <option value="CS:GO">
+                    <option value="FIFA 21">
+                </datalist>
+            </div>
+            <a class="logo" href="index.php"><img src="img/logoLdvEsport.png" alt="logo_LDV" title="logo_LDV"></a>
+            <div id="log">
+                <p>Se connecter</p>
+                <p>S'inscrire</p>
+            </div>
+        </header>
     <main>
         <div class="records">
-            <p>Suivez en direct sur Twitch</p>
+            <h2>Suivez en direct sur Twitch</h2>
             <div class="lastest">
                 <div class="last">
                     <img src="img/records.jpg" alt=""><p>Match 1</p>
@@ -36,7 +42,7 @@
             </div>
         </div>
         <div class="new">
-            <p>Brackets personalisée</p>
+            <h2>Brackets personalisée</h2>
             <div class="brac">
                 <a href="#" class="brac1"><h2>Bracket 1</h2> </a>
                 <a href="#" class="brac2"><h2>Bracket 2</h2></a>
