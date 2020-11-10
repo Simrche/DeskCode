@@ -52,7 +52,13 @@
             </div>  
         </div>
     </main>
-    <footer></footer>
+    
+    <footer>
+        <a href="#"><img src="img/twitter.png" alt="twitter" title="twitter"></a>
+        <a href="#"><img src="img/facebook.png" alt="facebook" title="facebook"></a>
+        <a href="#"><img src="img/discord.png" alt="discord" title="discord"></a>
+    </footer>
+
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/TweenMax.min.js"></script>
     <script src="js/main.js"></script>
