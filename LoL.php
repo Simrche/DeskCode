@@ -28,15 +28,15 @@
             <h2>Suivez en direct sur Twitch</h2>
             <div class="lastest">
                 <div class="last">
-                    <img src="img/records.jpg" alt=""><p>Match 1</p>
+                    <img src="img/records.jpg" alt="#" title="#"><p>Match 1</p>
                 </div>
                 
                 <div class="last">
-                    <img src="img/records.jpg" alt=""> <p>Match 2</p>
+                    <img src="img/records.jpg" alt="#" title="#"> <p>Match 2</p>
                 </div>
                
                 <div class="last">
-                    <img src="img/records.jpg" alt=""><p>Match 3</p>
+                    <img src="img/records.jpg" alt="#" title="#"><p>Match 3</p>
                 </div>
                 
             </div>
@@ -44,11 +44,11 @@
         <div class="new">
             <h2>Brackets personalisée</h2>
             <div class="brac">
-                <a href="#" class="brac1"><h2>Bracket 1</h2> </a>
-                <a href="#" class="brac2"><h2>Bracket 2</h2></a>
-                <a href="#" class="brac3"><h2>Bracket 3</h2></a>
-                <a href="#" class="brac4"><h2>Bracket 4</h2></a>
-                <a href="#" class="bracNew"><p><i class="fas fa-plus"></i></p></a>
+                <a href="#" class="brac1">Bracket 1</a>
+                <a href="#" class="brac2">Bracket 2</a>
+                <a href="#" class="brac3">Bracket 3</a>
+                <a href="#" class="brac4">Bracket 4</a>
+                <a href="#" class="bracNew">+</a>
             </div>  
         </div>
     </main>
