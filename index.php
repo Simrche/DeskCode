@@ -4,10 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style2.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/df1182159f.js" crossorigin="anonymous"></script>
         <title>Accueil</title>
     </head>
 
     <body>
+    <?php include "signUp.php" ?>
 
         <header>
             <div id="headerPartie1">
@@ -21,8 +24,8 @@
             </div>
             <a class="logo" href="index.php"><img src="img/logoLdvEsport.png" alt="logo_LDV" title="logo_LDV"></a>
             <div id="log">
-                <p>Se connecter</p>
-                <p>S'inscrire</p>
+                <p class="logInBut">Se connecter</p>
+                <p class="signUpBut">S'inscrire</p>
             </div>
         </header>
 
@@ -51,6 +54,7 @@
         </footer>
         
     </body>
+
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/TweenMax.min.js"></script>
