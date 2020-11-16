@@ -16,4 +16,3 @@ document.getElementById(".mdpVerif").value=$mdpVerif;
 if ($pseudo.lenght>0 && $email.lenght>0 && $mdp.lenght>0 && $mdpVerif.lenght>0) {
     $(".that").show(); 
 }
-
