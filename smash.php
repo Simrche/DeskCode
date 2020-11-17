@@ -31,7 +31,6 @@
     <main>
         <div class="records">
             <h2>Suivez en direct sur Twitch</h2>
-            https://youtu.be/nQka4wv6BLw
             <div class="lastest">
                 <div class="last">
                     <img src="img/lies.jpg" alt="#" title="#">
