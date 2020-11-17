@@ -32,7 +32,7 @@
                 </div>
                 
                 <div class="last">
-                    <img src="img/csgo1.jpg" alt=""> <p>Match 2</p>
+                    <img src="img/csgo1.jpg" alt=""><p>Match 2</p>
                 </div>
                
                 <div class="last">
@@ -42,7 +42,7 @@
             </div>
         </div>
         <div class="new">
-            <h2>Brackets personalisée</h2>
+            <h2>Brackets personalisés</h2>
             <div class="brac">
                 <a href="#" class="brac1"><h2>Bracket 1</h2> </a>
                 <a href="#" class="brac2"><h2>Bracket 2</h2></a>

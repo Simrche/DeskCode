@@ -50,7 +50,7 @@
             </div>
         </div>
         <div class="new">
-            <h2>Brackets personalisée</h2>
+            <h2>Brackets personalisés</h2>
             <div class="brac">
                 <a href="#" class="brac1">Bracket 1</a>
                 <a href="#" class="brac2">Bracket 2</a>
