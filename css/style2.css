@@ -282,6 +282,9 @@ footer
     text-decoration: none;
     color: white;
 }
+.brac a:hover{
+    opacity: 0.5;
+}
 
 .brac1
 {
@@ -305,6 +308,13 @@ footer
     background-image: url("../img/bra_lol.png");
     background-position: center;
 }
+.brac5
+{
+    background-image: url("../img/rlcs.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
 
 .bracNew
 {
