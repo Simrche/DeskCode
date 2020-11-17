@@ -310,6 +310,13 @@ footer
     background-size: cover;
 }
 
+.bracCsgo
+{
+     background-image: url('../img/bra-csgo.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
 @media screen and (max-width: 600px)
 {
     .records img
