@@ -283,48 +283,31 @@ footer
     color: white;
 }
 
-.brac1
+.bracLol, .bracNewLol
 {
     background-image: url("../img/bra_lol.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.brac2
+.bracCod, .bracNewCod
 {
-    background-image: url("../img/bra_lol.png");
+    background-image: url("../img/bracket_cod.jpg");
     background-position: center;
 }
 
-.brac3
-{
-    background-image: url("../img/bra_lol.png");
-    background-position: center;
-}
-
-.brac4
-{
-    background-image: url("../img/bra_lol.png");
-    background-position: center;
-}
-.brac5
+.bracRo
 {
     background-image: url("../img/rlcs.jpg");
     background-position: center;
     background-size: cover;
 }
-.brac6 {
+.bracFifa
+{
     background-image: url('../img/shrek.jpg');
     background-position: center;
     background-size: cover;
-}
-
-
-.bracNew
-{
-    background-image: url("../img/bra_lol.png");
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 @media screen and (max-width: 600px)
