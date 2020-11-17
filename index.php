@@ -31,8 +31,11 @@
 
         <section id="info">
             <h1>LDV Esport</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, enim! Praesentium, alias similique tempore quos iste debitis, ratione laborum voluptatibus perspiciatis odio fuga assumenda, omnis repudiandae tempora qui adipisci aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero assumenda molestias possimus quae expedita natus sint voluptatem neque odio non doloribus tempore saepe maxime totam, voluptate ducimus ut incidunt quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore sed temporibus vero sint, eius minus eum facere ab saepe quo dolore obcaecati voluptate eveniet, debitis qui, soluta odio id.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, enim! Praesentium, alias similique tempore quos iste debitis, ratione laborum voluptatibus perspiciatis odio fuga assumenda, omnis repudiandae tempora qui adipisci aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero assumenda molestias possimus quae expedita natus sint voluptatem neque odio non doloribus tempore saepe maxime totam, voluptate ducimus ut incidunt quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore sed temporibus vero sint, eius minus eum facere ab saepe quo dolore obcaecati voluptate eveniet, debitis qui, soluta odio id.</p>
+            <p>LDV ESPORT est donc une association orientée vers les jeux vidéos compétitifs et dont le but est de rayonner grâce aux performances de ses joueurs. Au travers de compétitions en lignes ou en LAN, les joueurs portent les couleurs  E-sport en affrontant des équipes aussi bien amateurs que professionnelles.</p>
+
+            <p>Pour l’année 2018-2019, LDV ESPORT devient officiellement une association. Elle sera donc composée en plus des joueurs, d’étudiants voulant mettre un pied dans ce domaine afin d’apporter leur pierre à l’édifice. De nombreux événements étudiants seront mis en place tels que des compétitions et une journée à thème jeux vidéo. <br> <br> <br>
+
+            Et ce n’est qu’un début… Venez agrandir les rangs de l’association si vous vous sentez l’âme d’un passionné.</p>
         </section>
 
         <section id="allGame">
