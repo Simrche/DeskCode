@@ -45,7 +45,7 @@
                 <a href="Rocket-League.php">Rocket League</a>
                 <a href="csgo.php">CS:GO</a>
                 <a href="fifa.php">FIFA 21</a>
-                <a href="#">Smash Bros Ultimate</a>
+                <a href="smash.php">Smash Bros Ultimate</a>
                 <a href="#">Call of Duty: Warzone</a>
             </div>
         </section>
