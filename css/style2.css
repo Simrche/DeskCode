@@ -1,98 +1,334 @@
-*{
+*
+{
     margin: 0;
     padding: 0;
-    color: red;
 }
-header{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
+
+@font-face
+{
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.ttf");
+
+    font-family: "Goldman";
+    src: url("../fonts/Goldman-Regular.ttf");
+}
+
+/* ------------------------------------- PAGE INDEX ----------------------------------------------------------- */
+
+header
+{
     background-color: #484848;
-}
-header img{
-    width: 40px;
-}
-header *{
-    /* padding-top: 2vh; */
-    margin-left: 1vh;
-}
-
-textarea{
-    border-radius: 2vh;
-    background-color: #656565;
-}
-
-.compte{
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: space-between;
 }
 
-.compte img{
-    width: 5%;
-}
-
-.records{
-    background-color: #585858;
-    
-}
-
-.records .lastest{
+#headerPartie1
+{
     display: flex;
-    margin-left: 10%;
+    align-items: center;
+    padding-left: 2%;
 }
-.records .last{
+
+header img
+{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 55%;
+}
+
+#choix_jeu
+{
+    width: 100%;
+    height: 30px;
+    padding-left: 10%;
+    border-radius: 10px;
+}
+
+#search_bar
+{
+    height: 30px;
+    width: 400px;
+    border: none;
+    padding-left: 10px;
+}
+
+#log
+{
+    padding-right: 2%;
+    display: flex;
+}
+
+#log p
+{
+    border: black 2px solid;
+    border-radius: 10px;
+    font-family: "Roboto";
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+#info
+{
+    background-color: #6C6C6C;
+    color: white;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
 }
 
-.records img{
-    width: 60%;
-    border-radius: 2vh;
-} 
+#info h1
+{
+    padding-top: 25px;
+    font-size: 40px;
+    font-family: "Goldman";
+}
 
-.new{
+#info p
+{
+    margin-top: 25px;
+    font-family: "Roboto";
+    width: 80%;
+    font-size: 20px;
+}
+
+#allGame
+{
+    background-color: #484848;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#allGame div a
+{
+    background-color: white;
+    text-decoration: none;
+    font-family: "Roboto";
+    color: black;
+    padding: 75px 125px;
+    margin: 25px;
+}
+
+#allGame div
+{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+#allGame h1
+{
+    padding-top: 25px;
+    font-size: 40px;
+    font-family: "Goldman";
+    color: white;
+}
+
+footer
+{
+    height: 75px;
+    background-color: #6C6C6C;
+}
+/* ---------------------------------------------------------- POP UP CONNEXION ----------------------------------------------------------- */
+.signUpBg, .logInBg{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signUp, .logIn{
+    width: 60%;
+    height: 60vh;
+    background-color: #eee;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 0.3rem solid;
+    border-color: #fe5260  #210089  #210089 #fe5260 ;
+
+}
+
+.logIn{
+    width: 45%;
+    height: 45vh;
+}
+
+.signUp h2, .logIn h2{
+    text-align: center;
+}
+
+.signUp .closeBut, .logIn .closeBut{
+    border-style: none;
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+.signForm, .logForm{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.signForm input, .logForm input{
+    width: 30%;
+    height: 5vh;
+    margin: 3%;
+    border-radius: 10px;
+}
+
+.signForm input:not(.subBut), .logForm input:not(.subBut){
+    border: 0.3rem solid;
+    border-color: #210089 #fe5260 #fe5260 #210089;
+    
+
+}
+.signForm .subBut, .logForm .subBut{
+    font-weight: bold;
+    height: 7vh;
+    color: rgb(255, 255, 255);
+    border: 0.3rem solid #fe5260;
+    background-color:#210089;
+}
+
+/* ---------------------------------------------------------- PAGE TOURNOI ----------------------------------------------------------- */
+
+.records
+{
+    background-color: #585858;
+}
+
+.records h2, .new h2
+{
+    padding: 25px 0 25px 25px;
+    color: white;
+    font-family: "Goldman";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.records .lastest
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.records .last
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.records img
+{
+    width: 500px;
+    border-radius: 2vh;
+    padding: 0 25px;
+}
+
+.last p
+{
+    margin-left: 25px;
+    font-family: "Roboto";
+    padding-bottom: 20px;
+    margin-top: 10px;
+    color: white;
+}
+
+.new
+{
     background-color: #484848;
 }
 
-.brac{
+.brac
+{
     display: flex;
     flex-flow: wrap row;
+    justify-content: center;
 }
 
-.brac a{
-    width: 30%;
-    height: 30vh;
+.brac a
+{
+    font-size: 2em;
+    font-family: "Roboto";
+    width: 500px;
+    height: 300px;
     margin: 1%;
     border-radius: 2vh;
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
-
-.brac a{
     text-decoration: none;
     color: white;
 }
 
-.brac1{
-    background-color: #ff5353;
-    
+.brac1
+{
+    background-image: url("../img/bra_lol.png");
 }
-.brac2{
-    background-color: #ff9557;
+
+.brac2
+{
+    background-image: url("../img/bra_lol.png");
+    background-position: center;
 }
-.brac3{
-    background-color: #53ff7c;
+
+.brac3
+{
+    background-image: url("../img/bra_lol.png");
+    background-position: center;
 }
-.brac4{
-    background-color: #53a3ff;
+
+.brac4
+{
+    background-image: url("../img/bra_lol.png");
+    background-position: center;
 }
-.bracNew{
-    background-color: #ff53ba;
+
+.bracNew
+{
+    background-image: url("../img/bra_lol.png");
+    background-position: center;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px)
+{
+    .records img
+    {
+        width: 90%;
+    }
+}
+
+/* --------------------------------------------------FOOTER-------------------------------------------------- */
+
+footer
+{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
