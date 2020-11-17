@@ -52,11 +52,11 @@
         <div class="new">
             <h2>Brackets personalisée</h2>
             <div class="brac">
-                <a href="#" class="brac6">Bracket 1</a>
-                <a href="#" class="brac6">Bracket 2</a>
-                <a href="#" class="brac6">Bracket 3</a>
-                <a href="#" class="brac6">Bracket 4</a>
-                <a href="#" class="brac6">+</a>
+                <a href="#" class="bracFifa">Bracket 1</a>
+                <a href="#" class="bracFifa">Bracket 2</a>
+                <a href="#" class="bracFifa">Bracket 3</a>
+                <a href="#" class="bracFifa">Bracket 4</a>
+                <a href="#" class="bracFifa">+</a>
             </div>
         </div>
     </main>

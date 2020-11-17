@@ -12,6 +12,7 @@
 
 <body>
     <?php include "signUp.php" ?>
+
     <header>
         <div id="headerPartie1">
             <input list="jeu" type="text" id="choix_jeu" placeholder="Choisir un jeu" name="game">
@@ -28,22 +29,23 @@
             <p class="signUpBut">S'inscrire</p>
         </div>
     </header>
+
     <main>
         <div class="records">
             <h2>Suivez en direct sur Twitch</h2>
             <div class="lastest">
                 <div class="last">
-                    <img src="img/records.jpg" alt="#" title="#">
+                    <img src="img/match_cod.jpg" alt="#" title="#">
                     <p>Match 1</p>
                 </div>
 
                 <div class="last">
-                    <img src="img/records.jpg" alt="#" title="#">
+                    <img src="img/match_cod.jpg" alt="#" title="#">
                     <p>Match 2</p>
                 </div>
 
                 <div class="last">
-                    <img src="img/records.jpg" alt="#" title="#">
+                    <img src="img/match_cod.jpg" alt="#" title="#">
                     <p>Match 3</p>
                 </div>
 
@@ -52,11 +54,11 @@
         <div class="new">
             <h2>Brackets personalisés</h2>
             <div class="brac">
-                <a href="#" class="bracLol">Bracket 1</a>
-                <a href="#" class="bracLol">Bracket 2</a>
-                <a href="#" class="bracLol">Bracket 3</a>
-                <a href="#" class="bracLol">Bracket 4</a>
-                <a href="#" class="bracNewLol">+</a>
+                <a href="#" class="bracCod">Bracket 1</a>
+                <a href="#" class="bracCod">Bracket 2</a>
+                <a href="#" class="bracCod">Bracket 3</a>
+                <a href="#" class="bracCod">Bracket 4</a>
+                <a href="#" class="bracNewCod">+</a>
             </div>
         </div>
     </main>
