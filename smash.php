@@ -33,17 +33,17 @@
             <h2>Suivez en direct sur Twitch</h2>
             <div class="lastest">
                 <div class="last">
-                    <img src="img/lies.jpg" alt="#" title="#">
+                    <img src="img/bra_smash.jpg" alt="#" title="#">
                     <p>Match 1</p>
                 </div>
 
                 <div class="last">
-                    <img src="img/lies.jpg" alt="#" title="#">
+                    <img src="img/bra_smash.jpg" alt="#" title="#">
                     <p>Match 2</p>
                 </div>
 
                 <div class="last">
-                    <img src="img/lies.jpg" alt="#" title="#">
+                    <img src="img/bra_smash.jpg" alt="#" title="#">
                     <p>Match 3</p>
                 </div>
 
