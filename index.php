@@ -1,3 +1,35 @@
+<?php
+    session_start();
+    $bdd = new PDO("mysql:host=localhost;dbname=deskcode;charset=utf8", "root", "");
+
+    $ajoutUsers = $bdd->prepare("INSERT INTO users(users_pseudo, users_mdp, users_email) VALUES(?, ?, ?);");
+    $connexion =  $bdd->prepare('SELECT users_mdp FROM users WHERE users_pseudo=:pseudo');
+
+    if(isset($_POST['envoyer'])) {
+        if($_POST['mdp'] === $_POST['mdpVerif']) {
+            $ajoutUsers->execute(array($_POST['username'], password_hash($_POST['mdp'], PASSWORD_DEFAULT), $_POST['email']));
+        }
+    }
+
+    if(isset($_POST['envoyerLog'])) {
+        $connexion->execute(array('pseudo' => $_POST['usernameLog']));
+        $donnees = $connexion->fetch();
+        if(password_verify($_POST['mdpLog'], $donnees['users_mdp'])) {
+            $_SESSION['pseudo'] = $_POST['usernameLog'];
+            header('Location: index.php');
+        }
+    }
+
+    if(isset($_POST['deco'])) {
+        session_destroy();
+        header('location:index.php');
+    }
+
+    if(isset($_SESSION['pseudo'])) {
+        echo "connecté sous le compte de ".$_SESSION['pseudo'];
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -24,8 +56,14 @@
             </div>
             <a class="logo" href="index.php"><img src="img/logoLdvEsport.png" alt="logo_LDV" title="logo_LDV"></a>
             <div id="log">
+            <?php if(empty($_SESSION['pseudo'])) {?>
                 <p class="logInBut">Se connecter</p>
                 <p class="signUpBut">S'inscrire</p>
+            <?php } else {?>
+                <form action="#" method='post'>
+                    <input type="submit" value='Déconnexion' name='deco'>
+                </form>
+            <?php }?>
             </div>
         </header>
 

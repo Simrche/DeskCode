@@ -36,13 +36,12 @@ $('.closeBut').click(function () {
 
 // tlCo.staggerFrom('.signUpBg', 0.1, { x: 0, y: 0, opacity: 0 });
 
-
-
-
-// 
-
-// pour pouvoir afficher/activer le bouton
-if ($pseudo.lenght>0 && $email.lenght>0 && $mdp.lenght>0 && $mdpVerif.lenght>0) {
-    $(".that").show(); 
+var changement = document.getElementById('choix_jeu');
+if(isset(changement.value)) {
+    console.log('salut')
 }
 
+// // pour pouvoir afficher/activer le bouton
+// if ($pseudo.lenght>0 && $email.lenght>0 && $mdp.lenght>0 && $mdpVerif.lenght>0) {
+//     $(".that").show(); 
+// }
