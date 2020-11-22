@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include "codes.php";
+    include "codes/codes.php";
     $bdd = new PDO("mysql:host=localhost;dbname=deskcode;charset=utf8", $indivRoots, $indivMdp);
 
     $ajoutUsers = $bdd->prepare("INSERT INTO users(users_pseudo, users_mdp, users_email) VALUES(?, ?, ?);");
