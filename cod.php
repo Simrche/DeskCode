@@ -65,7 +65,7 @@
 
     <footer>
         <a href="#"><img src="img/twitter.png" alt="twitter" title="twitter"></a>
-        <a href="#"><img src="img/facebook.png" alt="facebook" title="facebook"></a>
+        <a href="https://www.facebook.com/LDVEsport"><img src="img/facebook.png" alt="facebook" title="facebook"></a>
         <a href="#"><img src="img/discord.png" alt="discord" title="discord"></a>
     </footer>
 
