@@ -313,9 +313,16 @@ footer
 
 .bracCsgo
 {
-     background-image: url('../img/bra-csgo.jpg');
+    background-image: url('../img/bra-csgo.jpg');
     background-position: center;
     background-size: cover;
+}
+
+.bracSmash{
+    background-image: url('../img/bra_smash.jpg');
+    background-position: center;
+    background-size: cover;
+
 }
 
 @media screen and (max-width: 600px)

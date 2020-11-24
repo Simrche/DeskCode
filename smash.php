@@ -33,17 +33,17 @@
             <h2>Suivez en direct sur Twitch</h2>
             <div class="lastest">
                 <div class="last">
-                    <img src="img/bra_smash.jpg" alt="#" title="#">
+                    <img src="img/tourna_smash.jpg" alt="#" title="#">
                     <p>Match 1</p>
                 </div>
 
                 <div class="last">
-                    <img src="img/bra_smash.jpg" alt="#" title="#">
+                    <img src="img/tourna_smash.jpg" alt="#" title="#">
                     <p>Match 2</p>
                 </div>
 
                 <div class="last">
-                    <img src="img/bra_smash.jpg" alt="#" title="#">
+                    <img src="img/tourna_smash.jpg" alt="#" title="#">
                     <p>Match 3</p>
                 </div>
 
@@ -52,11 +52,10 @@
         <div class="new">
             <h2>Brackets personalisés</h2>
             <div class="brac">
-                <a href="#" class="brac1">Bracket 1</a>
-                <a href="#" class="brac2">Bracket 2</a>
-                <a href="#" class="brac3">Bracket 3</a>
-                <a href="#" class="brac4">Bracket 4</a>
-                <a href="#" class="bracNew">+</a>
+                <a href="#" class="bracSmash">Bracket 1</a>
+                <a href="#" class="bracSmash">Bracket 2</a>
+                <a href="#" class="bracSmash">Bracket 3</a>
+                <a href="#" class="bracSmash">Bracket 4</a>
             </div>
         </div>
     </main>
