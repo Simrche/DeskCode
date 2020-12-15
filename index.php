@@ -80,13 +80,6 @@
         <section id="allGame">
             <h1>Les jeux</h1>
             <div>
-                <a href="LoL.php">League of Legends</a>
-                <a href="Rocket-League.php">Rocket League</a>
-                <a href="csgo.php">CS:GO</a>
-                <a href="fifa.php">FIFA 21</a>
-                <a href="smash.php">Smash Bros Ultimate</a>
-                <a href="cod.php">Call of Duty: Warzone</a>
-
                 <a href="#">Création de Bracket</a>
                 <a href="#">Rejoindre un bracket déjà existant</a>
                 <a href="#">Regarder les anciens matchs</a>
