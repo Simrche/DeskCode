@@ -86,6 +86,10 @@
                 <a href="fifa.php">FIFA 21</a>
                 <a href="smash.php">Smash Bros Ultimate</a>
                 <a href="cod.php">Call of Duty: Warzone</a>
+
+                <a href="#">Création de Bracket</a>
+                <a href="#">Rejoindre un bracket déjà existant</a>
+                <a href="#">Regarder les anciens matchs</a>
             </div>
         </section>
 
