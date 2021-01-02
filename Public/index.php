@@ -56,32 +56,6 @@ Autoloader::register();
     Site::headerSite();
     ?>
 
-    <!-- <header>
-            <div id="headerPartie1">
-                <input list="jeu" type="text" id="choix_jeu" placeholder="Choisir un jeu" name="game">
-                <datalist id="jeu">
-                    <option value="League of Legends">
-                    <option value="Rocket League">
-                    <option value="CS:GO">
-                    <option value="FIFA 21">
-                </datalist>
-            </div>
-            <a class="logo" href="index.php"><img src="img/logoLdvEsport.png" alt="logo_LDV" title="logo_LDV"></a>
-            <div id="log">
-            <?php // if(empty($_SESSION['pseudo'])) {
-            ?>
-                <p class="logInBut">Se connecter</p>
-                <p class="signUpBut">S'inscrire</p>
-            <?php // } else {
-            ?>
-                <form action="#" method='post'>
-                    <input type="submit" value='Déconnexion' name='deco'>
-                </form>
-            <?php // }
-            ?>
-            </div>
-        </header> -->
-
     <section id="info">
         <h1>LDV Esport</h1>
         <p>LDV ESPORT est donc une association orientée vers les jeux vidéos compétitifs et dont le but est de rayonner grâce aux performances de ses joueurs. Au travers de compétitions en lignes ou en LAN, les joueurs portent les couleurs E-sport en affrontant des équipes aussi bien amateurs que professionnelles.</p>
@@ -101,20 +75,11 @@ Autoloader::register();
 
     </section>
 
-    <!-- <footer>
-            <a href="https://twitter.com/LDVEsport"><img src="img/twitter.png" alt="twitter" title="twitter"></a>
-            <a href="https://www.facebook.com/LDVEsport"><img src="img/facebook.png" alt="facebook" title="facebook"></a>
-            <a href="#"><img src="img/discord.png" alt="discord" title="discord"></a>
-        </footer> -->
     <?php
     Site::footerSite();
     Site::scripts()
     ?>
 </body>
 
-
-<!-- <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/TweenMax.min.js"></script>
-    <script src="js/main.js"></script> -->
 
 </html>
