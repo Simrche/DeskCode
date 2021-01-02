@@ -106,9 +106,33 @@ header img
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 40vh;
+}
+#allGame .optionsBra{
+    display: flex;
+    width: 100%;
+
+    /* margin: 0,  */
+}
+#allGame .optionsBra section{
+    width: 25%;
+    background-color: #fff;
+    margin: 5%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#allGame .optionsBra section a{
+    
+    text-decoration: none;
+    font-family: "Roboto";
+    color: black;
 }
 
-#allGame div a
+
+/* #allGame div a
 {
     background-color: white;
     text-decoration: none;
@@ -133,7 +157,7 @@ header img
     font-size: 40px;
     font-family: "Goldman";
     color: white;
-}
+} */
 
 footer
 {

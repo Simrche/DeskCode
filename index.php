@@ -78,12 +78,13 @@
         </section>
 
         <section id="allGame">
-            <h1>Les jeux</h1>
-            <div>
-                <a href="#">Création de Bracket</a>
-                <a href="#">Rejoindre un bracket déjà existant</a>
-                <a href="#">Regarder les anciens matchs</a>
-            </div>
+            <h2>Les jeux</h2>
+            <article class="optionsBra">
+                <section><a href="#">Création de Bracket</a></section>
+                <section><a href="#">Rejoindre un bracket déjà existant</a></section>
+                <section><a href="#">Regarder les anciens matchs</a></section>
+            </article>
+
         </section>
 
         <footer>
