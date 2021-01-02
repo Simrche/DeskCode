@@ -61,7 +61,7 @@ header img
     display: flex;
 }
 
-#log p
+#log .logInBut, #log .signUpBut, #log .logOutBut
 {
     border: black 2px solid;
     border-radius: 10px;
@@ -73,6 +73,11 @@ header img
     text-decoration: none;
     margin-right: 5px;
     cursor: pointer;
+}
+
+.logOutBut input{ 
+    border: none;
+    background-color: white;
 }
 
 #info
@@ -90,6 +95,10 @@ header img
     padding-top: 25px;
     font-size: 40px;
     font-family: "Goldman";
+}
+
+.signUpBg, .logInBg{
+    display: none;
 }
 
 #info p
@@ -112,7 +121,6 @@ header img
     display: flex;
     width: 100%;
 
-    /* margin: 0,  */
 }
 #allGame .optionsBra section{
     width: 25%;
