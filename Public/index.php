@@ -6,6 +6,7 @@ $bdd = new PDO("mysql:host=localhost;dbname=deskcode;charset=utf8", $indivRoots,
 $ajoutUsers = $bdd->prepare("INSERT INTO users(users_pseudo, users_mdp, users_email) VALUES(?, ?, ?);");
 $connexion =  $bdd->prepare('SELECT users_mdp FROM users WHERE users_pseudo=:pseudo');
 
+
 if (isset($_POST['envoyer'])) {
     if ($_POST['mdp'] === $_POST['mdpVerif']) {
         $ajoutUsers->execute(array($_POST['username'], password_hash($_POST['mdp'], PASSWORD_DEFAULT), $_POST['email']));
@@ -26,15 +27,20 @@ if (isset($_POST['deco'])) {
     header('location:index.php');
 }
 
-if (isset($_SESSION['pseudo'])) {
-    echo "connecté sous le compte de " . $_SESSION['pseudo'];
-}
+// if (isset($_SESSION['pseudo'])) {
+//     echo "connecté sous le compte de " . $_SESSION['pseudo'];
+// }
 
+use App\SignInC;
 use App\Site;
+
 
 require "../Autoloader.php";
 Autoloader::register();
 
+// SignInC::addUser($ajoutUsers);
+// SignInC::connexion($connexion);
+// SignInC::deconnexionU();
 
 ?>
 
@@ -51,7 +57,11 @@ Autoloader::register();
     </head> -->
 
 <body>
-    <?php include "../signUp.php" ?>
+    <?php // include "../signUp.php" ?>
+    <?php
+    SignInC::signUp(); 
+    SignInC::logIn(); 
+    ?>
     <?php
     Site::headerSite();
     ?>

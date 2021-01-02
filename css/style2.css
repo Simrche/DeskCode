@@ -61,6 +61,11 @@ header img
     display: flex;
 }
 
+#log .logButs{
+    display: flex;
+    justify-content: space-between;
+}
+
 #log .logInBut, #log .signUpBut, #log .logOutBut
 {
     border: black 2px solid;
