@@ -21,13 +21,8 @@ header
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-#headerPartie1
-{
-    display: flex;
-    align-items: center;
-    padding-left: 2%;
+    width: 100%;
+    padding: 10px;
 }
 
 header img
@@ -57,8 +52,11 @@ header img
 
 #log
 {
-    padding-right: 2%;
     display: flex;
+    align-items: center;
+}
+#log section{
+    padding: 10px;
 }
 
 #log .logButs{

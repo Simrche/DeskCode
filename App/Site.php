@@ -24,6 +24,57 @@ abstract class Site
     <?php
     }
 
+    public static function headerSite()
+    {
+    ?>
+        <header>
+            <article>
+                <section>
+                    <input list="jeu" type="text" id="choix_jeu" placeholder="Choisir un jeu" name="game">
+                    <datalist id="jeu">
+                        <option value="League of Legends">
+                        <option value="Rocket League">
+                        <option value="CS:GO">
+                        <option value="FIFA 21">
+                    </datalist>
+                </section>
+            </article>
+            <article>
+                <section>
+                    <a class="logo" href="index.php"><img src="../img/logoLdvEsport.png" alt="logo_LDV" title="logo_LDV"></a>
+
+                </section>
+            </article>
+
+
+            <article id="log">
+                <section>
+                    <?php if (isset($_SESSION['pseudo'])) { ?>
+                        <section class="isCo">
+                            <?php
+                            echo "Bonjour, " . $_SESSION['pseudo'];
+                            ?>
+                        </section>
+                    <?php } ?>
+                </section>
+                <section class="logButs">
+                    <?php if (empty($_SESSION['pseudo'])) { ?>
+                        <p class="logInBut">Se connecter</p>
+                        <p class="signUpBut">S'inscrire</p>
+                    <?php } else { ?>
+                        <form action="#" method='post'>
+                            <p class="logOutBut">
+                                <input type="submit" value='Déconnexion' name='deco'>
+                            </p>
+
+                        </form>
+                    <?php } ?>
+                </section>
+
+        </header>
+    <?php
+    }
+
     public static function footerSite()
     {
     ?>
@@ -41,58 +92,6 @@ abstract class Site
         <script src="../js/jquery-3.4.1.min.js"></script>
         <script src="../js/TweenMax.min.js"></script>
         <script src="../js/main.js"></script>
-<?php
-    }
-
-    public static function headerSite()
-    {
-    ?>
-        <header>
-            <article id="headerPartie1">
-                <section>
-                    <input list="jeu" type="text" id="choix_jeu" placeholder="Choisir un jeu" name="game">
-                    <datalist id="jeu">
-                        <option value="League of Legends">
-                        <option value="Rocket League">
-                        <option value="CS:GO">
-                        <option value="FIFA 21">
-                    </datalist>
-                </section>
-            </article>
-            <article>
-                <section>
-                    <a class="logo" href="index.php"><img src="../img/logoLdvEsport.png" alt="logo_LDV" title="logo_LDV"></a>
-
-                </section>
-            </article>
-            <article id="log">
-                <?php if (isset($_SESSION['pseudo'])) {?>
-                    <section class="isCo">
-                        <?php
-                        echo "Bonjour, " . $_SESSION['pseudo'];
-                        ?>
-                    </section>
-                <?php}?>
-                    
-                
-                <section class="logButs">
-                    <?php if (empty($_SESSION['pseudo'])) { ?>
-                        <p class="logInBut">Se connecter</p>
-                        <p class="signUpBut">S'inscrire</p>
-                    <?php } else { ?>
-                        <form action="#" method='post'>
-                            <p class="logOutBut">
-                                <input type="submit" value='Déconnexion' name='deco'>
-                            </p>
-
-                        </form>
-                    <?php } ?>
-                </section>
-            </article>
-        </header>
     <?php
     }
-}}
-
-
-?>
+}

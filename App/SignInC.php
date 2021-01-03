@@ -46,33 +46,34 @@ class SignInC extends Site
         </article>
 <?php }
 
-    // public static function addUser($addU)
-    // {
-    //     if (isset($_POST['envoyer'])) {
-    //         if ($_POST['mdp'] === $_POST['mdpVerif']) {
-    //             $addU->execute(array($_POST['username'], password_hash($_POST['mdp'], PASSWORD_DEFAULT), $_POST['email']));
-    //         }
-    //     }
-    // }
+    public static function addUser($addU)
+    {
+        if (isset($_POST['envoyer'])) {
+            if ($_POST['mdp'] === $_POST['mdpVerif']) {
+                $addU->execute(array($_POST['username'], password_hash($_POST['mdp'], PASSWORD_DEFAULT), $_POST['email']));
+            }
+        }
+    }
 
-    // public static function connexion($co)
-    // {
-    //     if (isset($_POST['envoyerLog'])) {
-    //         $co->execute(array('pseudo' => $_POST['usernameLog']));
-    //         $donnees = $co->fetch();
-    //         if (password_verify($_POST['mdpLog'], $donnees['users_mdp'])) {
-    //             $_SESSION['pseudo'] = $_POST['usernameLog'];
-    //             header('Location: index.php');
-    //         }
-    //     }
-    // }
+    public static function connexion($co)
+    {
+        if (isset($_POST['envoyerLog'])) {
+            $co->execute(array('pseudo' => $_POST['usernameLog']));
+            $donnees = $co->fetch();
+            if (password_verify($_POST['mdpLog'], $donnees['users_mdp'])) {
+                $_SESSION['pseudo'] = $_POST['usernameLog'];
+                header('Location: index.php');
+            }
+        }
+    }
 
-    // public static function deconnexionU()
-    // {
-    //     if (isset($_POST['deco'])) {
-    //         session_destroy();
-    //         header('location:index.php');
-    //         Site::headerSite();
-    //     }
-    // }
+    public static function deconnexionU()
+    {
+        if (isset($_POST['deco'])) {
+            session_destroy();
+            header('location:index.php');
+            Site::headerSite();
+        }
+    }
 }
+?>
