@@ -22,7 +22,6 @@ header
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 10px;
 }
 
 header img
@@ -31,7 +30,6 @@ header img
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 55%;
 }
 
 #choix_jeu
@@ -54,14 +52,17 @@ header img
 {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-#log section{
-    padding: 10px;
+
+#log section p{
+    margin: 10px;
 }
 
 #log .logButs{
     display: flex;
-    justify-content: space-between;
+
+    
 }
 
 #log .logInBut, #log .signUpBut, #log .logOutBut
@@ -74,7 +75,6 @@ header img
     color: black;
     padding: 10px 20px;
     text-decoration: none;
-    margin-right: 5px;
     cursor: pointer;
 }
 

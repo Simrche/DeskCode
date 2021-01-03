@@ -28,7 +28,7 @@ abstract class Site
     {
     ?>
         <header>
-            <article>
+            <article class="">
                 <section>
                     <input list="jeu" type="text" id="choix_jeu" placeholder="Choisir un jeu" name="game">
                     <datalist id="jeu">
@@ -50,11 +50,11 @@ abstract class Site
             <article id="log">
                 <section>
                     <?php if (isset($_SESSION['pseudo'])) { ?>
-                        <section class="isCo">
+                        <p class="isCo">
                             <?php
                             echo "Bonjour, " . $_SESSION['pseudo'];
                             ?>
-                        </section>
+                        </p>
                     <?php } ?>
                 </section>
                 <section class="logButs">
