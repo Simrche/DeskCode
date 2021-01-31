@@ -1,0 +1,566 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face
+{
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.ttf");
+
+    font-family: "Goldman";
+    src: url("../fonts/Goldman-Regular.ttf");
+
+}
+/* ------------------------------------- PAGE INDEX ----------------------------------------------------------- */
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header img
+{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice
+{
+    margin-left: 2%;
+}
+
+#choix_jeu
+{
+    width: 100%;
+    height: 30px;
+    padding-left: 10%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+#search_bar
+{
+    height: 30px;
+    width: 400px;
+    border: none;
+    padding-left: 10px;
+}
+
+#log
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 2.5%;
+}
+
+#log section p{
+    margin: 10px;
+}
+
+#log .logButs{
+    display: flex;
+    
+}
+
+
+#log .logInBut, #log .signUpBut, #log .logOutBut
+{
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logOutBut input{ 
+    border: none;
+    background-color: white;
+}
+
+#info
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+#info h1
+{
+    padding-top: 25px;
+    font-size: 40px;
+}
+
+.signUpBg, .logInBg{
+    display: none;
+}
+
+#info p
+{
+    margin: 2% 0;
+    width: 50%;
+    font-size: 20px;
+
+}
+
+#allGame
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+
+    h2
+    {
+        margin: 2% 0;
+        font-size: 30px;
+    }
+}
+#allGame .optionsBra{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+#allGame .optionsBra section{
+    width: 25%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5%;
+    border-radius: 30px;
+    
+}
+#allGame .optionsBra section a{
+    
+    text-decoration: none;
+}
+
+
+/* #allGame div a
+{
+    background-color: white;
+    text-decoration: none;
+    font-family: "Roboto";
+    color: black;
+    padding: 75px 125px;
+    margin: 25px;
+}
+
+#allGame div
+{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+#allGame h1
+{
+    padding-top: 25px;
+    font-size: 40px;
+    font-family: "Goldman";
+    color: white;
+} */
+
+/* ---------------------------------------------------------- POP UP CONNEXION ----------------------------------------------------------- */
+.signUpBg, .logInBg{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signUp, .logIn{
+    width: 60%;
+    height: 60vh;
+    background-color: #eee;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 0.3rem solid;
+    border-color: #fe5260  #210089  #210089 #fe5260 ;
+
+}
+
+.logIn{
+    width: 45%;
+    height: 45vh;
+}
+
+.signUp h2, .logIn h2{
+    text-align: center;
+}
+
+.signUp .closeBut, .logIn .closeBut{
+    border-style: none;
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+.signForm, .logForm{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.signForm input, .logForm input{
+    width: 30%;
+    height: 5vh;
+    margin: 3%;
+    border-radius: 10px;
+}
+
+.signForm input:not(.subBut), .logForm input:not(.subBut){
+    border: 0.3rem solid;
+    border-color: #210089 #fe5260 #fe5260 #210089;
+    
+
+}
+.signForm .subBut, .logForm .subBut{
+    font-weight: bold;
+    height: 7vh;
+    color: rgb(255, 255, 255);
+    border: 0.3rem solid #fe5260;
+    background-color:#210089;
+}
+
+/* ---------------------------------------------------------- PAGE TOURNOI ----------------------------------------------------------- */
+
+.records
+{
+    background-color: #585858;
+}
+
+.records h2, .new h2
+{
+    padding: 25px 0 25px 25px;
+    color: white;
+    font-family: "Goldman";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.records .lastest
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.records .last
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.records img
+{
+    width: 500px;
+    border-radius: 2vh;
+    padding: 0 25px;
+}
+
+.last p
+{
+    margin-left: 25px;
+    font-family: "Roboto";
+    padding-bottom: 20px;
+    margin-top: 10px;
+    color: white;
+}
+
+.new
+{
+    background-color: #484848;
+}
+
+.brac
+{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+}
+
+.brac a
+{
+    font-size: 2em;
+    font-family: "Roboto";
+    width: 500px;
+    height: 300px;
+    margin: 1%;
+    border-radius: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.bracLol, .bracNewLol
+{
+    background-image: url("../img/bra_lol.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bracCod, .bracNewCod
+{
+    background-image: url("../img/bracket_cod.jpg");
+    background-position: center;
+}
+
+.bracRo
+{
+    background-image: url("../img/rlcs.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.bracFifa
+{
+    background-image: url('../img/bra_fifa.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+.bracCsgo
+{
+    background-image: url('../img/bra-csgo.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.bracSmash{
+    background-image: url('../img/bra_smash.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+
+@media screen and (max-width: 600px)
+{
+    .records img
+    {
+        width: 90%;
+    }
+}
+
+/* --------------------------------------------------FOOTER-------------------------------------------------- */
+
+footer
+{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* ------------------------------------- VARIABLES MODE CLAIR ----------------------------------------------------------- */
+$LightText: rgb(12, 0, 55);
+$LightBG: rgb(255, 255, 255);
+$LightPrimary: rgb(254, 82, 97);
+$LightSecondary: $LightText;
+$LightButton: rgb(254, 82, 97);
+/* ------------------------------------- VARIABLES MODE SOMBRE ----------------------------------------------------------- */
+$DarkText: rgb(255, 255, 255);
+$DarkBG: rgb(30, 30, 30);
+$DarkPrimary: rgb(39, 39, 39);
+$DarkSecondary: $DarkText;
+$DarkButton: rgb(254, 82, 97);
+/* ------------------------------------- VARIABLES POLICES ----------------------------------------------------------- */
+$TitleFont: "Nunito";
+$TextFont: 'Roboto', sans-serif;
+$LdvFont: "Goldman";
+$ButtonFont: $TitleFont;
+
+.light-theme
+{
+        header
+    {
+        background-color: $LightSecondary;
+        transition: all 0.5s ease;
+
+        .LDswitch
+        {
+            width: 30px;
+            filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(115deg) brightness(105%) contrast(107%);
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .LDswitch:hover
+        {
+            transform: scale(0.8);
+            filter: invert(42%) sepia(83%) saturate(2325%) hue-rotate(327deg) brightness(105%) contrast(99%);
+            transition: 0.5s;
+        }
+    }
+
+    #log .logInBut, #log .signUpBut, #log .logOutBut
+    {
+        font-family: $TitleFont;
+        background-color: $LightPrimary;
+        color: $LightBG;
+        font-weight: bold;
+        transition: all 0.5s ease;
+    }
+
+    #info
+    {
+        background-color: $LightBG;
+        color: $LightText;
+        transition: all 0.5s ease;
+    }
+
+    #info h1
+    {
+        font-family: $LdvFont;
+    }
+
+    #info p
+    {
+        font-family: $TextFont;
+    }
+
+    #allGame
+    {
+        background-color: #eeeeee;
+        transition: all 0.5s ease;
+
+        h2
+        {
+            color: $LightPrimary;
+            font-family: $TitleFont;
+            font-weight: bold;
+            transition: all 0.5s ease;
+        }
+    }
+    #allGame .optionsBra section{
+        background-color: $LightButton;
+        
+    }
+    #allGame .optionsBra section a{
+        
+        font-family: $TitleFont;
+        color: $LightBG;
+        font-weight: bold;
+        transition: all 0.5s ease;
+    }
+
+    footer
+    {
+        background-color: $LightSecondary;
+        img
+        {
+            filter: invert(1);
+            transition: all 0.5s ease;
+        }
+    }
+}
+
+.dark-theme
+{
+    header
+    {
+        background-color: $DarkBG;
+        transition: all 0.5s ease;
+
+        .LDswitch
+        {
+            width: 30px;
+            filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(115deg) brightness(105%) contrast(107%);
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .LDswitch:hover
+        {
+            transform: scale(0.8);
+            filter: invert(42%) sepia(83%) saturate(2325%) hue-rotate(327deg) brightness(105%) contrast(99%);
+            transition: 0.5s;
+        }
+    }
+
+    #log .logInBut, #log .signUpBut, #log .logOutBut
+    {
+        font-family: $TitleFont;
+        background-color: $LightPrimary;
+        color: $DarkText;
+        font-weight: bold;
+        transition: all 0.5s ease;
+    }
+
+    #info
+    {
+        background-color: $DarkPrimary;
+        color: $DarkText;
+        transition: all 0.5s ease;
+    }
+
+    #info h1
+    {
+        font-family: $LdvFont;
+    }
+
+    #info p
+    {
+        font-family: $TextFont;
+    }
+
+    #allGame
+    {
+        background-color: rgb(63, 63, 63);;
+        transition: all 0.5s ease;
+
+        h2
+        {
+            color: $DarkButton;
+            font-family: $TitleFont;
+            font-weight: bold;
+            transition: all 0.5s ease;
+        }
+    }
+    #allGame .optionsBra section{
+        background-color: $DarkButton;
+        transition: all 0.5s ease;
+        
+    }
+    #allGame .optionsBra section a{
+        
+        font-family: $TitleFont;
+        color: $DarkSecondary;
+        font-weight: bold;
+        transition: all 0.5s ease;
+    }
+
+    footer
+    {
+        background-color: $DarkBG;
+        img
+        {
+            filter: invert(1);
+            transition: all 0.5s ease;
+        }
+    }
+}

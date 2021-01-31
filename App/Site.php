@@ -28,7 +28,7 @@ abstract class Site
     {
     ?>
         <header>
-            <article class="">
+            <article class="choice">
                 <section>
                     <input list="jeu" type="text" id="choix_jeu" placeholder="Choisir un jeu" name="game">
                     <datalist id="jeu">
@@ -59,8 +59,8 @@ abstract class Site
                 </section>
                 <section class="logButs">
                     <?php if (empty($_SESSION['pseudo'])) { ?>
-                        <p class="logInBut">Se connecter</p>
-                        <p class="signUpBut">S'inscrire</p>
+                        <p class="logInBut">Connexion</p>
+                        <p class="signUpBut">Inscription</p>
                     <?php } else { ?>
                         <form action="#" method='post'>
                             <p class="logOutBut">
@@ -70,7 +70,7 @@ abstract class Site
                         </form>
                     <?php } ?>
                 </section>
-
+                <img src="../img/sun.svg" alt="" class="LDswitch">
         </header>
     <?php
     }

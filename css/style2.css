@@ -1,147 +1,131 @@
-*
-{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-@font-face
-{
-    font-family: "Roboto";
-    src: url("../fonts/Roboto-Regular.ttf");
-
-    font-family: "Goldman";
-    src: url("../fonts/Goldman-Regular.ttf");
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+  font-family: "Goldman";
+  src: url("../fonts/Goldman-Regular.ttf");
 }
-
 /* ------------------------------------- PAGE INDEX ----------------------------------------------------------- */
-
-header
-{
-    background-color: #484848;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
-header img
-{
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header img {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#choix_jeu
-{
-    width: 100%;
-    height: 30px;
-    padding-left: 10%;
-    border-radius: 10px;
+.choice {
+  margin-left: 2%;
 }
 
-#search_bar
-{
-    height: 30px;
-    width: 400px;
-    border: none;
-    padding-left: 10px;
+#choix_jeu {
+  width: 100%;
+  height: 30px;
+  padding-left: 10%;
+  border-radius: 10px;
+  outline: none;
+  border: none;
 }
 
-#log
-{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+#search_bar {
+  height: 30px;
+  width: 400px;
+  border: none;
+  padding-left: 10px;
 }
 
-#log section p{
-    margin: 10px;
+#log {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 2.5%;
 }
 
-#log .logButs{
-    display: flex;
-
-    
+#log section p {
+  margin: 10px;
 }
 
-#log .logInBut, #log .signUpBut, #log .logOutBut
-{
-    border: black 2px solid;
-    border-radius: 10px;
-    font-family: "Roboto";
-    text-align: center;
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
-    text-decoration: none;
-    cursor: pointer;
+#log .logButs {
+  display: flex;
 }
 
-.logOutBut input{ 
-    border: none;
-    background-color: white;
+#log .logInBut, #log .signUpBut, #log .logOutBut {
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-#info
-{
-    background-color: #6C6C6C;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 25px;
+.logOutBut input {
+  border: none;
+  background-color: white;
 }
 
-#info h1
-{
-    padding-top: 25px;
-    font-size: 40px;
-    font-family: "Goldman";
+#info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 25px;
 }
 
-.signUpBg, .logInBg{
-    display: none;
+#info h1 {
+  padding-top: 25px;
+  font-size: 40px;
 }
 
-#info p
-{
-    margin-top: 25px;
-    font-family: "Roboto";
-    width: 80%;
-    font-size: 20px;
+.signUpBg, .logInBg {
+  display: none;
 }
 
-#allGame
-{
-    background-color: #484848;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 40vh;
-}
-#allGame .optionsBra{
-    display: flex;
-    width: 100%;
-
-}
-#allGame .optionsBra section{
-    width: 25%;
-    background-color: #fff;
-    margin: 5%;
-    height: 15vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-#allGame .optionsBra section a{
-    
-    text-decoration: none;
-    font-family: "Roboto";
-    color: black;
+#info p {
+  margin: 2% 0;
+  width: 50%;
+  font-size: 20px;
 }
 
+#allGame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40vh;
+}
+#allGame h2 {
+  margin: 2% 0;
+  font-size: 30px;
+}
+
+#allGame .optionsBra {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#allGame .optionsBra section {
+  width: 25%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5%;
+  border-radius: 30px;
+}
+
+#allGame .optionsBra section a {
+  text-decoration: none;
+}
 
 /* #allGame div a
 {
@@ -169,211 +153,310 @@ header img
     font-family: "Goldman";
     color: white;
 } */
-
-footer
-{
-    height: 75px;
-    background-color: #6C6C6C;
-}
 /* ---------------------------------------------------------- POP UP CONNEXION ----------------------------------------------------------- */
-.signUpBg, .logInBg{
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.signUpBg, .logInBg {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.signUp, .logIn{
-    width: 60%;
-    height: 60vh;
-    background-color: #eee;
-    border-radius: 10px;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    border: 0.3rem solid;
-    border-color: #fe5260  #210089  #210089 #fe5260 ;
-
+.signUp, .logIn {
+  width: 60%;
+  height: 60vh;
+  background-color: #eee;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 0.3rem solid;
+  border-color: #fe5260 #210089 #210089 #fe5260;
 }
 
-.logIn{
-    width: 45%;
-    height: 45vh;
+.logIn {
+  width: 45%;
+  height: 45vh;
 }
 
-.signUp h2, .logIn h2{
-    text-align: center;
+.signUp h2, .logIn h2 {
+  text-align: center;
 }
 
-.signUp .closeBut, .logIn .closeBut{
-    border-style: none;
-    position: absolute;
-    top: 0;
-    right: 5px;
+.signUp .closeBut, .logIn .closeBut {
+  border-style: none;
+  position: absolute;
+  top: 0;
+  right: 5px;
 }
 
-.signForm, .logForm{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.signForm, .logForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.signForm input, .logForm input{
-    width: 30%;
-    height: 5vh;
-    margin: 3%;
-    border-radius: 10px;
+.signForm input, .logForm input {
+  width: 30%;
+  height: 5vh;
+  margin: 3%;
+  border-radius: 10px;
 }
 
-.signForm input:not(.subBut), .logForm input:not(.subBut){
-    border: 0.3rem solid;
-    border-color: #210089 #fe5260 #fe5260 #210089;
-    
-
+.signForm input:not(.subBut), .logForm input:not(.subBut) {
+  border: 0.3rem solid;
+  border-color: #210089 #fe5260 #fe5260 #210089;
 }
-.signForm .subBut, .logForm .subBut{
-    font-weight: bold;
-    height: 7vh;
-    color: rgb(255, 255, 255);
-    border: 0.3rem solid #fe5260;
-    background-color:#210089;
+
+.signForm .subBut, .logForm .subBut {
+  font-weight: bold;
+  height: 7vh;
+  color: white;
+  border: 0.3rem solid #fe5260;
+  background-color: #210089;
 }
 
 /* ---------------------------------------------------------- PAGE TOURNOI ----------------------------------------------------------- */
-
-.records
-{
-    background-color: #585858;
+.records {
+  background-color: #585858;
 }
 
-.records h2, .new h2
-{
-    padding: 25px 0 25px 25px;
-    color: white;
-    font-family: "Goldman";
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.records h2, .new h2 {
+  padding: 25px 0 25px 25px;
+  color: white;
+  font-family: "Goldman";
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.records .lastest
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.records .last
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.records .lastest {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.records img
-{
-    width: 500px;
-    border-radius: 2vh;
-    padding: 0 25px;
+.records .last {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.last p
-{
-    margin-left: 25px;
-    font-family: "Roboto";
-    padding-bottom: 20px;
-    margin-top: 10px;
-    color: white;
+.records img {
+  width: 500px;
+  border-radius: 2vh;
+  padding: 0 25px;
 }
 
-.new
-{
-    background-color: #484848;
+.last p {
+  margin-left: 25px;
+  font-family: "Roboto";
+  padding-bottom: 20px;
+  margin-top: 10px;
+  color: white;
 }
 
-.brac
-{
-    display: flex;
-    flex-flow: wrap row;
-    justify-content: center;
+.new {
+  background-color: #484848;
 }
 
-.brac a
-{
-    font-size: 2em;
-    font-family: "Roboto";
-    width: 500px;
-    height: 300px;
-    margin: 1%;
-    border-radius: 2vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: white;
+.brac {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
 }
 
-.bracLol, .bracNewLol
-{
-    background-image: url("../img/bra_lol.png");
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.brac a {
+  font-size: 2em;
+  font-family: "Roboto";
+  width: 500px;
+  height: 300px;
+  margin: 1%;
+  border-radius: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
 }
 
-.bracCod, .bracNewCod
-{
-    background-image: url("../img/bracket_cod.jpg");
-    background-position: center;
+.bracLol, .bracNewLol {
+  background-image: url("../img/bra_lol.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.bracRo
-{
-    background-image: url("../img/rlcs.jpg");
-    background-position: center;
-    background-size: cover;
-}
-.bracFifa
-{
-    background-image: url('../img/bra_fifa.jpeg');
-    background-position: center;
-    background-size: cover;
+.bracCod, .bracNewCod {
+  background-image: url("../img/bracket_cod.jpg");
+  background-position: center;
 }
 
-.bracCsgo
-{
-    background-image: url('../img/bra-csgo.jpg');
-    background-position: center;
-    background-size: cover;
+.bracRo {
+  background-image: url("../img/rlcs.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
-.bracSmash{
-    background-image: url('../img/bra_smash.jpg');
-    background-position: center;
-    background-size: cover;
-
+.bracFifa {
+  background-image: url("../img/bra_fifa.jpeg");
+  background-position: center;
+  background-size: cover;
 }
 
-@media screen and (max-width: 600px)
-{
-    .records img
-    {
-        width: 90%;
-    }
+.bracCsgo {
+  background-image: url("../img/bra-csgo.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
+.bracSmash {
+  background-image: url("../img/bra_smash.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .records img {
+    width: 90%;
+  }
+}
 /* --------------------------------------------------FOOTER-------------------------------------------------- */
-
-footer
-{
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+footer {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+
+/* ------------------------------------- VARIABLES MODE CLAIR ----------------------------------------------------------- */
+/* ------------------------------------- VARIABLES MODE SOMBRE ----------------------------------------------------------- */
+/* ------------------------------------- VARIABLES POLICES ----------------------------------------------------------- */
+.light-theme header {
+  background-color: #0c0037;
+  transition: all 0.5s ease;
+}
+.light-theme header .LDswitch {
+  width: 30px;
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(115deg) brightness(105%) contrast(107%);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.light-theme header .LDswitch:hover {
+  transform: scale(0.8);
+  filter: invert(42%) sepia(83%) saturate(2325%) hue-rotate(327deg) brightness(105%) contrast(99%);
+  transition: 0.5s;
+}
+.light-theme #log .logInBut, .light-theme #log .signUpBut, .light-theme #log .logOutBut {
+  font-family: "Nunito";
+  background-color: #fe5261;
+  color: white;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+.light-theme #info {
+  background-color: white;
+  color: #0c0037;
+  transition: all 0.5s ease;
+}
+.light-theme #info h1 {
+  font-family: "Goldman";
+}
+.light-theme #info p {
+  font-family: "Roboto", sans-serif;
+}
+.light-theme #allGame {
+  background-color: #eeeeee;
+  transition: all 0.5s ease;
+}
+.light-theme #allGame h2 {
+  color: #fe5261;
+  font-family: "Nunito";
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+.light-theme #allGame .optionsBra section {
+  background-color: #fe5261;
+}
+.light-theme #allGame .optionsBra section a {
+  font-family: "Nunito";
+  color: white;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+.light-theme footer {
+  background-color: #0c0037;
+}
+.light-theme footer img {
+  filter: invert(1);
+  transition: all 0.5s ease;
+}
+
+.dark-theme header {
+  background-color: #1e1e1e;
+  transition: all 0.5s ease;
+}
+.dark-theme header .LDswitch {
+  width: 30px;
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(115deg) brightness(105%) contrast(107%);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.dark-theme header .LDswitch:hover {
+  transform: scale(0.8);
+  filter: invert(42%) sepia(83%) saturate(2325%) hue-rotate(327deg) brightness(105%) contrast(99%);
+  transition: 0.5s;
+}
+.dark-theme #log .logInBut, .dark-theme #log .signUpBut, .dark-theme #log .logOutBut {
+  font-family: "Nunito";
+  background-color: #fe5261;
+  color: white;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+.dark-theme #info {
+  background-color: #272727;
+  color: white;
+  transition: all 0.5s ease;
+}
+.dark-theme #info h1 {
+  font-family: "Goldman";
+}
+.dark-theme #info p {
+  font-family: "Roboto", sans-serif;
+}
+.dark-theme #allGame {
+  background-color: #3f3f3f;
+  transition: all 0.5s ease;
+}
+.dark-theme #allGame h2 {
+  color: #fe5261;
+  font-family: "Nunito";
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+.dark-theme #allGame .optionsBra section {
+  background-color: #fe5261;
+  transition: all 0.5s ease;
+}
+.dark-theme #allGame .optionsBra section a {
+  font-family: "Nunito";
+  color: white;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+.dark-theme footer {
+  background-color: #1e1e1e;
+}
+.dark-theme footer img {
+  filter: invert(1);
+  transition: all 0.5s ease;
+}
+
+/*# sourceMappingURL=style2.css.map */

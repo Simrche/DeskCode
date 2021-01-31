@@ -45,3 +45,20 @@ $('.closeBut').click(function () {
 // if ($pseudo.lenght>0 && $email.lenght>0 && $mdp.lenght>0 && $mdpVerif.lenght>0) {
 //     $(".that").show(); 
 // }
+
+// Fonction pour gérer le changement de classe pour le mode sombre
+
+$('.LDswitch').click(function () {
+    
+    if ($('body').attr('class') == "light-theme") 
+    {
+        $("body").removeClass('light-theme');
+        $("body").addClass('dark-theme');
+    }
+    else
+    {
+        $("body").removeClass('dark-theme');
+        $("body").addClass('light-theme');
+    }
+
+});

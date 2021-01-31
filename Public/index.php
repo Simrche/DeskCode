@@ -29,7 +29,7 @@ SignInC::deconnexionU();
 <?php Site::headSite(); ?>
 
 
-<body>
+<body class="light-theme">
     <?php
     SignInC::signUp();
     SignInC::logIn();
@@ -50,7 +50,7 @@ SignInC::deconnexionU();
         </article>
 
         <article id="allGame">
-            <h2>Les jeux</h2>
+            <h2>Les Jeux</h2>
             <article class="optionsBra">
                 <section><a href="#">Création de Bracket</a></section>
                 <section><a href="#">Rejoindre un bracket déjà existant</a></section>

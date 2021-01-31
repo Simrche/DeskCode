@@ -1,7 +1,6 @@
 <?php ?>
 
 <article class="signUpBg">
-
     <section class="signUp">
         <button class="closeBut"><i class="fas fa-times fa-2x"></i></button>
         <h2>S'inscrire :</h2>
