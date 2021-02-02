@@ -446,7 +446,7 @@ $ButtonFont: $TitleFont;
 
     #allGame
     {
-        background-color: #eeeeee;
+        background-color: rgb(238, 238, 238);
         transition: all 0.5s ease;
 
         h2
@@ -477,6 +477,12 @@ $ButtonFont: $TitleFont;
             filter: invert(1);
             transition: all 0.5s ease;
         }
+    }
+    #BrackForm
+    {
+        color: $LightButton;
+        font-family: $TitleFont;
+        background-color: rgb(238, 238, 238);
     }
 }
 
@@ -530,7 +536,7 @@ $ButtonFont: $TitleFont;
 
     #allGame
     {
-        background-color: rgb(63, 63, 63);;
+        background-color: rgb(63, 63, 63);
         transition: all 0.5s ease;
 
         h2
@@ -561,6 +567,39 @@ $ButtonFont: $TitleFont;
         {
             filter: invert(1);
             transition: all 0.5s ease;
+        }
+    }
+
+    #BrackForm
+    {
+        color: $DarkButton;
+        font-family: $TitleFont;
+        background-color: rgb(63, 63, 63);
+    }
+}
+
+#BrackForm
+{
+    
+    form
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        div
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            width: 100%;
+
+            label, input
+            {
+                margin: 5%;
+            }
         }
     }
 }

@@ -397,6 +397,11 @@ footer {
   filter: invert(1);
   transition: all 0.5s ease;
 }
+.light-theme #BrackForm {
+  color: #fe5261;
+  font-family: "Nunito";
+  background-color: #eeeeee;
+}
 
 .dark-theme header {
   background-color: #1e1e1e;
@@ -457,6 +462,28 @@ footer {
 .dark-theme footer img {
   filter: invert(1);
   transition: all 0.5s ease;
+}
+.dark-theme #BrackForm {
+  color: #fe5261;
+  font-family: "Nunito";
+  background-color: #3f3f3f;
+}
+
+#BrackForm form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#BrackForm form div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+#BrackForm form div label, #BrackForm form div input {
+  margin: 5%;
 }
 
 /*# sourceMappingURL=style2.css.map */
