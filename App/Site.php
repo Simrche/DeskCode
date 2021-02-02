@@ -39,7 +39,7 @@ abstract class Site
                     </datalist>
                 </section>
             </article>
-            <article>
+            <article class="headLogo">
                 <section>
                     <a class="logo" href="index.php"><img src="../img/logoLdvEsport.png" alt="logo_LDV" title="logo_LDV"></a>
 
@@ -92,6 +92,6 @@ abstract class Site
         <script src="../js/jquery-3.4.1.min.js"></script>
         <script src="../js/TweenMax.min.js"></script>
         <script src="../js/main.js"></script>
-    <?php
+<?php
     }
 }
