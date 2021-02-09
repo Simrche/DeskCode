@@ -382,7 +382,10 @@ header img
 footer
 {
     height: 100px;
+    width: 100%;
     display: flex;
+    position: relative;
+    bottom: 0;
     justify-content: space-around;
     align-items: center;
 }
@@ -493,6 +496,12 @@ $ButtonFont: $TitleFont;
         font-family: $TitleFont;
         background-color: rgb(238, 238, 238);
     }
+    #TeamForm
+    {
+        color: $LightButton;
+        font-family: $TitleFont;
+        background-color: rgb(238, 238, 238);
+    }
 }
 
 .dark-theme
@@ -585,30 +594,66 @@ $ButtonFont: $TitleFont;
         font-family: $TitleFont;
         background-color: rgb(63, 63, 63);
     }
+    #TeamForm
+    {
+        color: $DarkButton;
+        font-family: $TitleFont;
+        background-color: rgb(63, 63, 63);
+    }
 }
 
 #BrackForm
 {
-    
+    padding: 5%;
+
     form
     {
         display: flex;
         justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        width: 100%;
 
         div
         {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-            width: 100%;
+            display:grid;
+            grid-template-columns: max-content max-content;
+            grid-gap:5px;
 
             label, input
             {
-                margin: 5%;
+                margin: 10% 0%;
             }
+            input, textarea
+            {
+                resize: none;
+                border: 1px solid $DarkPrimary;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+#TeamForm
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3% 0;
+    form
+    {
+        
+        div
+        {
+            display:grid;
+            grid-template-columns: max-content max-content;
+            grid-gap:50px;
+
+            input
+            {
+                border-radius: 5px;
+                border: 1px solid $DarkPrimary;
+            }
+
         }
     }
 }

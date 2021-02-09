@@ -16,6 +16,14 @@ header {
   justify-content: space-between;
   width: 100%;
 }
+header article {
+  width: 30%;
+}
+header .headLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 header img {
   width: 100px;
@@ -330,7 +338,10 @@ header img {
 /* --------------------------------------------------FOOTER-------------------------------------------------- */
 footer {
   height: 100px;
+  width: 100%;
   display: flex;
+  position: relative;
+  bottom: 0;
   justify-content: space-around;
   align-items: center;
 }
@@ -402,6 +413,11 @@ footer {
   font-family: "Nunito";
   background-color: #eeeeee;
 }
+.light-theme #TeamForm {
+  color: #fe5261;
+  font-family: "Nunito";
+  background-color: #eeeeee;
+}
 
 .dark-theme header {
   background-color: #1e1e1e;
@@ -468,22 +484,49 @@ footer {
   font-family: "Nunito";
   background-color: #3f3f3f;
 }
+.dark-theme #TeamForm {
+  color: #fe5261;
+  font-family: "Nunito";
+  background-color: #3f3f3f;
+}
 
+#BrackForm {
+  padding: 5%;
+}
 #BrackForm form {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  width: 100%;
 }
 #BrackForm form div {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-gap: 5px;
+}
+#BrackForm form div label, #BrackForm form div input {
+  margin: 10% 0%;
+}
+#BrackForm form div input, #BrackForm form div textarea {
+  resize: none;
+  border: 1px solid #272727;
+  border-radius: 5px;
+}
+
+#TeamForm {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
   width: 100%;
+  padding: 3% 0;
 }
-#BrackForm form div label, #BrackForm form div input {
-  margin: 5%;
+#TeamForm form div {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-gap: 50px;
+}
+#TeamForm form div input {
+  border-radius: 5px;
+  border: 1px solid #272727;
 }
 
 /*# sourceMappingURL=style2.css.map */

@@ -41,33 +41,30 @@ SignInC::deconnexionU();
             <form action="">
                 <div>
                     <label for="">Date: </label><input type="text">
-                </div>
-                <div>
+
                     <label for="">Lieu: </label><input type="text">
-                </div>
-                <div>
+
                     <label for="">Nombre d'équipes: </label><input type="text">
-                </div>
-                <div>
-                    <label for="">Loser Bracket: </label><input type="text">
-                </div>
-                <div>
-                    <label for="">Match: </label><input type="text">
-                </div>
-                <div>
-                    <label for="">Match finale: </label><input type="text">
-                </div>
-                <div>
+
+                    <label for="">Loser Bracket: </label><div><input type="radio">OUI<input type="radio">NON</div>
+
+                    <label for="">Match: </label>
+                    <select name="pets" id="pet-select">
+                        <option value="">--Please choose an option--</option>
+                        <option value="bo1">BO1</option>
+                        <option value="bo2">BO3</option>
+                        <option value="bo3">BO5</option>
+                    </select>
+
+                    <label for="">Match finale: </label><div><input type="radio">BO1<input type="radio">BO3<input type="radio">BO5</div>
+
                     <label for="">1er prix: </label><input type="text">
-                </div>
-                <div>
+
                     <label for="">Second Prix: </label><input type="text">
-                </div>
-                <div>
+
                     <label for="">Troisième prix: </label><input type="text">
-                </div>
-                <div>
-                    <label for="">Description: </label><input type="text">
+
+                    <label for="">Description: </label><textarea></textarea>
                 </div>
             </form>
         </div>
