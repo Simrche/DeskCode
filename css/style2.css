@@ -412,11 +412,13 @@ footer {
   color: #fe5261;
   font-family: "Nunito";
   background-color: #eeeeee;
+  transition: all 0.5s ease;
 }
 .light-theme #TeamForm {
   color: #fe5261;
   font-family: "Nunito";
   background-color: #eeeeee;
+  transition: all 0.5s ease;
 }
 
 .dark-theme header {
@@ -483,11 +485,13 @@ footer {
   color: #fe5261;
   font-family: "Nunito";
   background-color: #3f3f3f;
+  transition: all 0.5s ease;
 }
 .dark-theme #TeamForm {
   color: #fe5261;
   font-family: "Nunito";
   background-color: #3f3f3f;
+  transition: all 0.5s ease;
 }
 
 #BrackForm {
