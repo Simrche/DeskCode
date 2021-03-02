@@ -53,7 +53,7 @@ SignInC::deconnexionU();
             <h2>Les Jeux</h2>
             <article class="optionsBra">
                 <section><a href="BracketForm.php">Création de Bracket</a></section>
-                <section><a href="#">Rejoindre un bracket déjà existant</a></section>
+                <section><a href="TeamForm.php">Rejoindre un bracket déjà existant</a></section>
                 <section><a href="#">PLACEHOLDER</a></section>
             </article>
 

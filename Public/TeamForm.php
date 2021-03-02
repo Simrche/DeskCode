@@ -9,6 +9,7 @@ $connexion =  $bdd->prepare('SELECT users_mdp FROM users WHERE users_pseudo=:pse
 
 use App\Site;
 use App\SignInC;
+use App\TeamForm;
 
 require "../Autoloader.php";
 Autoloader::register();
@@ -33,34 +34,21 @@ SignInC::deconnexionU();
     <?php
     SignInC::signUp();
     SignInC::logIn();
-    ?>
-    <?php
     Site::headerSite();
     ?>
-
     <div id="TeamForm">
         <form action="">
-                <div>
-                    <label for="">Nom d'équipe: </label><input type="text">
+            <div>
+            <label for="">Nom : </label><input type="text">
 
-                    <label for="">Nombre de remplaçant: </label><input type="text">
+                <?php
+                // if(teams==true){
+                    TeamForm::members(3);
 
-                    <label for="">Chef d'équipe: </label><input type="text">
-
-                    <label for="">Joueur 1: </label><span><input type="text">&nbsp;&nbsp;<input type="text"></span>
-
-                    <label for="">Joueur 2: </label><span><input type="text">&nbsp;&nbsp;<input type="text"></span>
-
-                    <label for="">Joueur 3: </label><span><input type="text">&nbsp;&nbsp;<input type="text"></span>
-
-                    <label for="">Joueur 4: </label><span><input type="text">&nbsp;&nbsp;<input type="text"></span>
-
-                    <label for="">Joueur 5: </label><span><input type="text">&nbsp;&nbsp;<input type="text"></span>
-
-                    <label for="">Email: </label><input type="text">
-
-                    <label for="">Discord: </label><input type="text">
-                </div>
+                // }
+                // TeamForm::theForm();
+                ?>
+            </div>
         </form>
     </div>
     <?php
