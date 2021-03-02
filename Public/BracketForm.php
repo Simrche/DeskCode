@@ -46,7 +46,7 @@ SignInC::deconnexionU();
 
                     <label for="">Nombre d'équipes: </label><input type="text">
 
-                    <label for="">Loser Bracket: </label><div><input type="radio">OUI<input type="radio">NON</div>
+                    <label for="">Loser Bracket: </label><div><input type="radio" name="LoserRad">OUI<input type="radio" name="LoserRad">NON</div>
 
                     <label for="">Match: </label>
                     <select name="pets" id="pet-select">
@@ -56,7 +56,7 @@ SignInC::deconnexionU();
                         <option value="bo3">BO5</option>
                     </select>
 
-                    <label for="">Match finale: </label><div><input type="radio">BO1<input type="radio">BO3<input type="radio">BO5</div>
+                    <label for="">Match finale: </label><div><input type="radio" name="FinalRad">BO1<input type="radio" name="FinalRad">BO3<input type="radio" name="FinalRad">BO5</div>
 
                     <label for="">1er prix: </label><input type="text">
 
