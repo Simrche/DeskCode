@@ -29,7 +29,7 @@ SignInC::deconnexionU();
 <?php Site::headSite(); ?>
 
 
-<body class="light-theme">
+<body class="dark-theme">
     <?php
     SignInC::signUp();
     SignInC::logIn();

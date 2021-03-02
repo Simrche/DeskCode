@@ -4,6 +4,6 @@
 // il faudra ensuite remplir codes.php par vos identifiants phpmyadmin
 
 $indivRoots = "root";
-$indivMdp = "";
+$indivMdp = "oui";
 
 
