@@ -16,7 +16,7 @@ abstract class Site
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="../css/style2.css">
+            <link rel="stylesheet" href="css/style2.css">
             <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
             <script src="https://kit.fontawesome.com/df1182159f.js" crossorigin="anonymous"></script>
             <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -43,7 +43,7 @@ abstract class Site
             </article>
             <article class="headLogo">
                 <section>
-                    <a class="logo" href="index.php"><img src="../img/logoLdvEsport.png" alt="logo_LDV" title="logo_LDV"></a>
+                    <a class="logo" href="index.php"><img src="img/logoLdvEsport.png" alt="logo_LDV" title="logo_LDV"></a>
 
                 </section>
             </article>
@@ -72,7 +72,7 @@ abstract class Site
                         </form>
                     <?php } ?>
                 </section>
-                <img src="../img/sun.svg" alt="" class="LDswitch">
+                <img src="img/sun.svg" alt="" class="LDswitch">
         </header>
     <?php
     }
@@ -81,9 +81,9 @@ abstract class Site
     {
     ?>
         <footer>
-            <a href="https://twitter.com/LDVEsport"><img src="../img/twitter.png" alt="twitter" title="twitter"></a>
-            <a href="https://www.facebook.com/LDVEsport"><img src="../img/facebook.png" alt="facebook" title="facebook"></a>
-            <a href="#"><img src="../img/discord.png" alt="discord" title="discord"></a>
+            <a href="https://twitter.com/LDVEsport"><img src="img/twitter.png" alt="twitter" title="twitter"></a>
+            <a href="https://www.facebook.com/LDVEsport"><img src="img/facebook.png" alt="facebook" title="facebook"></a>
+            <a href="#"><img src="img/discord.png" alt="discord" title="discord"></a>
         </footer>
     <?php
     }
@@ -91,9 +91,9 @@ abstract class Site
     public static function scripts()
     {
     ?>
-        <script src="../js/jquery-3.4.1.min.js"></script>
-        <script src="../js/TweenMax.min.js"></script>
-        <script src="../js/main.js"></script>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/TweenMax.min.js"></script>
+        <script src="js/main.js"></script>
 <?php
     }
 }

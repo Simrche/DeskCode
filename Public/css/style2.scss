@@ -7,10 +7,10 @@
 @font-face
 {
     font-family: "Roboto";
-    src: url("fonts/Roboto-Regular.ttf");
+    src: url("../fonts/Roboto-Regular.ttf");
 
     font-family: "Goldman";
-    src: url("fonts/Goldman-Regular.ttf");
+    src: url("../fonts/Goldman-Regular.ttf");
 
 }
 /* ------------------------------------- PAGE INDEX ----------------------------------------------------------- */
@@ -330,7 +330,7 @@ header img
 
 .bracLol, .bracNewLol
 {
-    background-image: url("img/bra_lol.png");
+    background-image: url("../img/bra_lol.png");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -338,32 +338,32 @@ header img
 
 .bracCod, .bracNewCod
 {
-    background-image: url("img/bracket_cod.jpg");
+    background-image: url("../img/bracket_cod.jpg");
     background-position: center;
 }
 
 .bracRo
 {
-    background-image: url("img/rlcs.jpg");
+    background-image: url("../img/rlcs.jpg");
     background-position: center;
     background-size: cover;
 }
 .bracFifa
 {
-    background-image: url('img/bra_fifa.jpeg');
+    background-image: url('../img/bra_fifa.jpeg');
     background-position: center;
     background-size: cover;
 }
 
 .bracCsgo
 {
-    background-image: url('img/bra-csgo.jpg');
+    background-image: url('../img/bra-csgo.jpg');
     background-position: center;
     background-size: cover;
 }
 
 .bracSmash{
-    background-image: url('img/bra_smash.jpg');
+    background-image: url('../img/bra_smash.jpg');
     background-position: center;
     background-size: cover;
 
