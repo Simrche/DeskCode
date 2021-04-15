@@ -39,6 +39,11 @@ header img
     
 }
 
+body
+{
+    flex-grow: 1;
+}
+
 .choice
 {
     margin-left: 2%;
@@ -410,8 +415,10 @@ $ButtonFont: $TitleFont;
 
 .light-theme
 {
+    background-color: $LightBG;
+    transition: all 0.5s ease;
         header
-    {
+        {
         background-color: $LightSecondary;
         transition: all 0.5s ease;
 
@@ -504,10 +511,30 @@ $ButtonFont: $TitleFont;
         background-color: rgb(238, 238, 238);
         transition: all 0.5s ease;
     }
+    #BrackList
+    {
+        color: rgb(238, 238, 238);
+        font-family: $TitleFont;
+        transition: all 0.5s ease;
+
+        a
+        {
+            text-decoration: none;
+        }
+        .BrackCard
+        {
+            background-color: $LightButton;
+            transition: all 0.5s ease;
+            text-decoration: none;
+            color: rgb(238, 238, 238);
+        }
+    }
 }
 
 .dark-theme 
 {
+    background-color: $DarkPrimary;
+    transition: all 0.5s ease;
     header
     {
         background-color: $DarkBG;
@@ -604,6 +631,24 @@ $ButtonFont: $TitleFont;
         background-color: rgb(63, 63, 63);
         transition: all 0.5s ease;
     }
+    #BrackList
+    {
+        color: $DarkButton;
+        font-family: $TitleFont;
+        transition: all 0.5s ease;
+
+        a
+        {
+            text-decoration: none;
+        }
+        .BrackCard
+        {
+            background-color: rgb(223, 223, 223);
+            transition: all 0.5s ease;
+            text-decoration: none;
+            color: $DarkButton;
+        }
+    }
 }
 
 #BrackForm
@@ -661,3 +706,43 @@ $ButtonFont: $TitleFont;
         }
     }
 }
+#BrackList
+{
+    h1
+    {
+        text-align: center;
+    }
+    .BrackCard
+    {
+        margin: 10% 20% 12% 20%;
+        padding: 3%;
+        border-radius: 30px;
+
+        h2
+        {
+            margin: 0;
+        }
+        .BrackMakerBlock
+        {
+            display: flex;
+            align-items: center;
+            img
+            {
+                width: 10vh;
+                height: 10vh;
+                border-radius: 100%;
+                object-fit: cover;
+                margin-right: 2%;
+            }
+            .BrackAuth
+            {
+                margin: 0;
+            }
+        }
+        .BrackDesc
+        {
+            margin: 3% 0 0 0;
+        }
+    }
+}
+

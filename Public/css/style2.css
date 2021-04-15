@@ -32,6 +32,10 @@ header img {
   align-items: center;
 }
 
+body {
+  flex-grow: 1;
+}
+
 .choice {
   margin-left: 2%;
 }
@@ -349,6 +353,10 @@ footer {
 /* ------------------------------------- VARIABLES MODE CLAIR ----------------------------------------------------------- */
 /* ------------------------------------- VARIABLES MODE SOMBRE ----------------------------------------------------------- */
 /* ------------------------------------- VARIABLES POLICES ----------------------------------------------------------- */
+.light-theme {
+  background-color: white;
+  transition: all 0.5s ease;
+}
 .light-theme header {
   background-color: #0c0037;
   transition: all 0.5s ease;
@@ -420,7 +428,25 @@ footer {
   background-color: #eeeeee;
   transition: all 0.5s ease;
 }
+.light-theme #BrackList {
+  color: #eeeeee;
+  font-family: "Nunito";
+  transition: all 0.5s ease;
+}
+.light-theme #BrackList a {
+  text-decoration: none;
+}
+.light-theme #BrackList .BrackCard {
+  background-color: #fe5261;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  color: #eeeeee;
+}
 
+.dark-theme {
+  background-color: #272727;
+  transition: all 0.5s ease;
+}
 .dark-theme header {
   background-color: #1e1e1e;
   transition: all 0.5s ease;
@@ -493,6 +519,20 @@ footer {
   background-color: #3f3f3f;
   transition: all 0.5s ease;
 }
+.dark-theme #BrackList {
+  color: #fe5261;
+  font-family: "Nunito";
+  transition: all 0.5s ease;
+}
+.dark-theme #BrackList a {
+  text-decoration: none;
+}
+.dark-theme #BrackList .BrackCard {
+  background-color: #dfdfdf;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  color: #fe5261;
+}
 
 #BrackForm {
   padding: 5%;
@@ -531,6 +571,35 @@ footer {
 #TeamForm form div input {
   border-radius: 5px;
   border: 1px solid #272727;
+}
+
+#BrackList h1 {
+  text-align: center;
+}
+#BrackList .BrackCard {
+  margin: 10% 20% 12% 20%;
+  padding: 3%;
+  border-radius: 30px;
+}
+#BrackList .BrackCard h2 {
+  margin: 0;
+}
+#BrackList .BrackCard .BrackMakerBlock {
+  display: flex;
+  align-items: center;
+}
+#BrackList .BrackCard .BrackMakerBlock img {
+  width: 10vh;
+  height: 10vh;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-right: 2%;
+}
+#BrackList .BrackCard .BrackMakerBlock .BrackAuth {
+  margin: 0;
+}
+#BrackList .BrackCard .BrackDesc {
+  margin: 3% 0 0 0;
 }
 
 /*# sourceMappingURL=style2.css.map */
