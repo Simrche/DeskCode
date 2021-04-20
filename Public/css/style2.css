@@ -707,3 +707,73 @@ footer {
   }
 
 }
+
+@media screen and (max-width:376px)
+{
+
+  header{
+    padding: 5px;
+    height: 200px;
+  }
+
+
+
+  #info p{
+    font-size: 40px;
+    width: 75%;
+   
+  }
+
+  #allGame{
+    height: 1000px;
+  }
+
+  #allGame h2{
+    font-size: 55px;
+  }
+
+  #allGame .optionsBra{
+    display: block;
+  }
+
+  #allGame .optionsBra section{
+    margin: 50px auto;
+    height: 200px;
+    width: 500px;
+  }    
+  #allGame .optionsBra section a{
+    font-size: 35px;
+  }
+
+
+  main{
+    height: 2100px;
+    margin-bottom: 100px;
+  }
+  
+
+
+
+  footer{
+    height: 200px;
+  }
+
+  footer a img{
+    height: 100px;
+  }
+
+  .signUp, .logIn{
+    width: 800px;
+    height: 700px;
+  }
+
+  .signForm input, .logForm input{
+    height: 120px;
+    font-size: 30px;
+  }
+
+  .signUpBg, .logInBg{
+    height: 100%;
+  }
+
+}
