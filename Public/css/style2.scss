@@ -745,4 +745,27 @@ $ButtonFont: $TitleFont;
         }
     }
 }
+.Row_style{
+    display: flex;
+    height: 80vh;
+    .Column{
+        width: 25%;
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        div{
+            padding: 10px 20px;
+            background-color: $LightBG;
+            border-radius: 10px;
+            cursor: pointer;
+            border: 0.3rem solid;
+            border-color: #210089 #fe5260 #fe5260 #210089;
+        }
+    }
+    p{
+        color: $DarkButton;
+        font-family: $TitleFont;
 
+    }
+}
