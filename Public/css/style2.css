@@ -639,6 +639,11 @@ footer {
    padding: 20px;
   }
 
+  #choix_jeu{
+    height: 50px;
+    font-size: 30px;
+  }
+
   #log{
     margin-right: 50px;
   }
@@ -683,17 +688,22 @@ footer {
     width: 1000px;
   }
 
-  .signUp{
+  .signUp, .logIn{
     width: 700px;
   }
 
-  .signUp h2{
+  .signUp h2, .logIn{
     font-size: 35px;
     margin-bottom: 50px;
   }
 
-  .signUp input{
-    height: 50px;
+  .signForm input, .logForm input{
+    height: 100px;
+    font-size: 20px;
+  }
+
+  .signUpBg, .logInBg{
+    height: 100%;
   }
 
 }
