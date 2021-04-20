@@ -39,6 +39,7 @@ SignInC::deconnexionU();
     <div id="TeamForm">
         <form action="">
             <div>
+
                 <?php
                 // if(teams==true){
                     TeamForm::theName();
