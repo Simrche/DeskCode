@@ -71,7 +71,9 @@ body {
   display: flex;
 }
 
-#log .logInBut, #log .signUpBut, #log .logOutBut {
+#log .logInBut,
+#log .signUpBut,
+#log .logOutBut {
   border: none;
   border-radius: 10px;
   text-align: center;
@@ -83,6 +85,7 @@ body {
 .logOutBut input {
   border: none;
   background-color: white;
+  background-color: #fe5260;
 }
 
 #info {
@@ -97,7 +100,8 @@ body {
   font-size: 40px;
 }
 
-.signUpBg, .logInBg {
+.signUpBg,
+.logInBg {
   display: none;
 }
 
@@ -166,7 +170,8 @@ body {
     color: white;
 } */
 /* ---------------------------------------------------------- POP UP CONNEXION ----------------------------------------------------------- */
-.signUpBg, .logInBg {
+.signUpBg,
+.logInBg {
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 100vh;
@@ -176,7 +181,8 @@ body {
   align-items: center;
 }
 
-.signUp, .logIn {
+.signUp,
+.logIn {
   width: 60%;
   height: 60vh;
   background-color: #eee;
@@ -196,36 +202,42 @@ body {
   height: 45vh;
 }
 
-.signUp h2, .logIn h2 {
+.signUp h2,
+.logIn h2 {
   text-align: center;
 }
 
-.signUp .closeBut, .logIn .closeBut {
+.signUp .closeBut,
+.logIn .closeBut {
   border-style: none;
   position: absolute;
   top: 0;
   right: 5px;
 }
 
-.signForm, .logForm {
+.signForm,
+.logForm {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.signForm input, .logForm input {
+.signForm input,
+.logForm input {
   width: 30%;
   height: 5vh;
   margin: 3%;
   border-radius: 10px;
 }
 
-.signForm input:not(.subBut), .logForm input:not(.subBut) {
+.signForm input:not(.subBut),
+.logForm input:not(.subBut) {
   border: 0.3rem solid;
   border-color: #210089 #fe5260 #fe5260 #210089;
 }
 
-.signForm .subBut, .logForm .subBut {
+.signForm .subBut,
+.logForm .subBut {
   font-weight: bold;
   height: 7vh;
   color: white;
@@ -238,7 +250,8 @@ body {
   background-color: #585858;
 }
 
-.records h2, .new h2 {
+.records h2,
+.new h2 {
   padding: 25px 0 25px 25px;
   color: white;
   font-family: "Goldman";
@@ -298,14 +311,16 @@ body {
   color: white;
 }
 
-.bracLol, .bracNewLol {
+.bracLol,
+.bracNewLol {
   background-image: url("../img/bra_lol.png");
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.bracCod, .bracNewCod {
+.bracCod,
+.bracNewCod {
   background-image: url("../img/bracket_cod.jpg");
   background-position: center;
 }
@@ -362,7 +377,7 @@ footer {
   transition: all 0.5s ease;
 }
 .light-theme header .LDswitch {
-  width: 30px;
+  width: 10%;
   filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(115deg) brightness(105%) contrast(107%);
   cursor: pointer;
   transition: 0.5s;
@@ -372,7 +387,13 @@ footer {
   filter: invert(42%) sepia(83%) saturate(2325%) hue-rotate(327deg) brightness(105%) contrast(99%);
   transition: 0.5s;
 }
-.light-theme #log .logInBut, .light-theme #log .signUpBut, .light-theme #log .logOutBut {
+.light-theme header .isCo {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.light-theme #log .logInBut,
+.light-theme #log .signUpBut,
+.light-theme #log .logOutBut {
   font-family: "Nunito";
   background-color: #fe5261;
   color: white;
@@ -452,7 +473,7 @@ footer {
   transition: all 0.5s ease;
 }
 .dark-theme header .LDswitch {
-  width: 30px;
+  width: 10%;
   filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(115deg) brightness(105%) contrast(107%);
   cursor: pointer;
   transition: 0.5s;
@@ -462,7 +483,13 @@ footer {
   filter: invert(42%) sepia(83%) saturate(2325%) hue-rotate(327deg) brightness(105%) contrast(99%);
   transition: 0.5s;
 }
-.dark-theme #log .logInBut, .dark-theme #log .signUpBut, .dark-theme #log .logOutBut {
+.dark-theme header .isCo {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.dark-theme #log .logInBut,
+.dark-theme #log .signUpBut,
+.dark-theme #log .logOutBut {
   font-family: "Nunito";
   background-color: #fe5261;
   color: white;
@@ -547,10 +574,12 @@ footer {
   grid-template-columns: max-content max-content;
   grid-gap: 5px;
 }
-#BrackForm form div label, #BrackForm form div input {
+#BrackForm form div label,
+#BrackForm form div input {
   margin: 10% 0%;
 }
-#BrackForm form div input, #BrackForm form div textarea {
+#BrackForm form div input,
+#BrackForm form div textarea {
   resize: none;
   border: 1px solid #272727;
   border-radius: 5px;

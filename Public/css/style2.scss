@@ -1,56 +1,47 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
 }
 
-@font-face
-{
+@font-face {
     font-family: "Roboto";
     src: url("../fonts/Roboto-Regular.ttf");
 
     font-family: "Goldman";
     src: url("../fonts/Goldman-Regular.ttf");
-
 }
 /* ------------------------------------- PAGE INDEX ----------------------------------------------------------- */
-header
-{
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    article{
+    article {
         width: 30%;
     }
-    .headLogo{
+    .headLogo {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 }
 
-header img
-{
+header img {
     width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
-body
-{
+body {
     flex-grow: 1;
 }
 
-.choice
-{
+.choice {
     margin-left: 2%;
 }
 
-#choix_jeu
-{
+#choix_jeu {
     width: 100%;
     height: 30px;
     padding-left: 10%;
@@ -59,34 +50,31 @@ body
     border: none;
 }
 
-#search_bar
-{
+#search_bar {
     height: 30px;
     width: 400px;
     border: none;
     padding-left: 10px;
 }
 
-#log
-{
+#log {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-right: 2.5%;
 }
 
-#log section p{
+#log section p {
     margin: 10px;
 }
 
-#log .logButs{
+#log .logButs {
     display: flex;
-    
 }
 
-
-#log .logInBut, #log .signUpBut, #log .logOutBut
-{
+#log .logInBut,
+#log .signUpBut,
+#log .logOutBut {
     border: none;
     border-radius: 10px;
     text-align: center;
@@ -95,58 +83,53 @@ body
     cursor: pointer;
 }
 
-.logOutBut input{ 
+.logOutBut input {
     border: none;
     background-color: white;
+    background-color: #fe5260;
 }
 
-#info
-{
+#info {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 25px;
 }
 
-#info h1
-{
+#info h1 {
     padding-top: 25px;
     font-size: 40px;
 }
 
-.signUpBg, .logInBg{
+.signUpBg,
+.logInBg {
     display: none;
 }
 
-#info p
-{
+#info p {
     margin: 2% 0;
     width: 50%;
     font-size: 20px;
-
 }
 
-#allGame
-{
+#allGame {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 40vh;
 
-    h2
-    {
+    h2 {
         margin: 2% 0;
         font-size: 30px;
     }
 }
-#allGame .optionsBra{
+#allGame .optionsBra {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
-
 }
-#allGame .optionsBra section{
+#allGame .optionsBra section {
     width: 25%;
     height: 15vh;
     display: flex;
@@ -154,13 +137,10 @@ body
     align-items: center;
     margin: 0 5%;
     border-radius: 30px;
-    
 }
-#allGame .optionsBra section a{
-    
+#allGame .optionsBra section a {
     text-decoration: none;
 }
-
 
 /* #allGame div a
 {
@@ -190,7 +170,8 @@ body
 } */
 
 /* ---------------------------------------------------------- POP UP CONNEXION ----------------------------------------------------------- */
-.signUpBg, .logInBg{
+.signUpBg,
+.logInBg {
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100vh;
@@ -200,7 +181,8 @@ body
     align-items: center;
 }
 
-.signUp, .logIn{
+.signUp,
+.logIn {
     width: 60%;
     height: 60vh;
     background-color: #eee;
@@ -212,62 +194,64 @@ body
     align-items: center;
     border-radius: 10px;
     border: 0.3rem solid;
-    border-color: #fe5260  #210089  #210089 #fe5260 ;
-
+    border-color: #fe5260 #210089 #210089 #fe5260;
 }
 
-.logIn{
+.logIn {
     width: 45%;
     height: 45vh;
 }
 
-.signUp h2, .logIn h2{
+.signUp h2,
+.logIn h2 {
     text-align: center;
 }
 
-.signUp .closeBut, .logIn .closeBut{
+.signUp .closeBut,
+.logIn .closeBut {
     border-style: none;
     position: absolute;
     top: 0;
     right: 5px;
 }
 
-.signForm, .logForm{
+.signForm,
+.logForm {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.signForm input, .logForm input{
+.signForm input,
+.logForm input {
     width: 30%;
     height: 5vh;
     margin: 3%;
     border-radius: 10px;
 }
 
-.signForm input:not(.subBut), .logForm input:not(.subBut){
+.signForm input:not(.subBut),
+.logForm input:not(.subBut) {
     border: 0.3rem solid;
     border-color: #210089 #fe5260 #fe5260 #210089;
-    
-
 }
-.signForm .subBut, .logForm .subBut{
+.signForm .subBut,
+.logForm .subBut {
     font-weight: bold;
     height: 7vh;
     color: rgb(255, 255, 255);
     border: 0.3rem solid #fe5260;
-    background-color:#210089;
+    background-color: #210089;
 }
 
 /* ---------------------------------------------------------- PAGE TOURNOI ----------------------------------------------------------- */
 
-.records
-{
+.records {
     background-color: #585858;
 }
 
-.records h2, .new h2
-{
+.records h2,
+.new h2 {
     padding: 25px 0 25px 25px;
     color: white;
     font-family: "Goldman";
@@ -276,29 +260,25 @@ body
     align-items: center;
 }
 
-.records .lastest
-{
+.records .lastest {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.records .last
-{
+.records .last {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.records img
-{
+.records img {
     width: 500px;
     border-radius: 2vh;
     padding: 0 25px;
 }
 
-.last p
-{
+.last p {
     margin-left: 25px;
     font-family: "Roboto";
     padding-bottom: 20px;
@@ -306,20 +286,17 @@ body
     color: white;
 }
 
-.new
-{
+.new {
     background-color: #484848;
 }
 
-.brac
-{
+.brac {
     display: flex;
     flex-flow: wrap row;
     justify-content: center;
 }
 
-.brac a
-{
+.brac a {
     font-size: 2em;
     font-family: "Roboto";
     width: 500px;
@@ -333,59 +310,52 @@ body
     color: white;
 }
 
-.bracLol, .bracNewLol
-{
+.bracLol,
+.bracNewLol {
     background-image: url("../img/bra_lol.png");
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.bracCod, .bracNewCod
-{
+.bracCod,
+.bracNewCod {
     background-image: url("../img/bracket_cod.jpg");
     background-position: center;
 }
 
-.bracRo
-{
+.bracRo {
     background-image: url("../img/rlcs.jpg");
     background-position: center;
     background-size: cover;
 }
-.bracFifa
-{
-    background-image: url('../img/bra_fifa.jpeg');
+.bracFifa {
+    background-image: url("../img/bra_fifa.jpeg");
     background-position: center;
     background-size: cover;
 }
 
-.bracCsgo
-{
-    background-image: url('../img/bra-csgo.jpg');
+.bracCsgo {
+    background-image: url("../img/bra-csgo.jpg");
     background-position: center;
     background-size: cover;
 }
 
-.bracSmash{
-    background-image: url('../img/bra_smash.jpg');
+.bracSmash {
+    background-image: url("../img/bra_smash.jpg");
     background-position: center;
     background-size: cover;
-
 }
 
-@media screen and (max-width: 600px)
-{
-    .records img
-    {
+@media screen and (max-width: 600px) {
+    .records img {
         width: 90%;
     }
 }
 
 /* --------------------------------------------------FOOTER-------------------------------------------------- */
 
-footer
-{
+footer {
     height: 100px;
     width: 100%;
     display: flex;
@@ -409,36 +379,37 @@ $DarkSecondary: $DarkText;
 $DarkButton: rgb(254, 82, 97);
 /* ------------------------------------- VARIABLES POLICES ----------------------------------------------------------- */
 $TitleFont: "Nunito";
-$TextFont: 'Roboto', sans-serif;
+$TextFont: "Roboto", sans-serif;
 $LdvFont: "Goldman";
 $ButtonFont: $TitleFont;
 
-.light-theme
-{
+.light-theme {
     background-color: $LightBG;
     transition: all 0.5s ease;
-        header
-        {
+    header {
         background-color: $LightSecondary;
         transition: all 0.5s ease;
 
-        .LDswitch
-        {
-            width: 30px;
+        .LDswitch {
+            width: 10%;
             filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(115deg) brightness(105%) contrast(107%);
             cursor: pointer;
             transition: 0.5s;
         }
-        .LDswitch:hover
-        {
+        .LDswitch:hover {
             transform: scale(0.8);
             filter: invert(42%) sepia(83%) saturate(2325%) hue-rotate(327deg) brightness(105%) contrast(99%);
             transition: 0.5s;
         }
+        .isCo {
+            font-family: $TextFont;
+            color: white;
+        }
     }
 
-    #log .logInBut, #log .signUpBut, #log .logOutBut
-    {
+    #log .logInBut,
+    #log .signUpBut,
+    #log .logOutBut {
         font-family: $TitleFont;
         background-color: $LightPrimary;
         color: $LightBG;
@@ -446,83 +417,69 @@ $ButtonFont: $TitleFont;
         transition: all 0.5s ease;
     }
 
-    #info
-    {
+    #info {
         background-color: $LightBG;
         color: $LightText;
         transition: all 0.5s ease;
     }
 
-    #info h1
-    {
+    #info h1 {
         font-family: $LdvFont;
     }
 
-    #info p
-    {
+    #info p {
         font-family: $TextFont;
     }
 
-    #allGame
-    {
+    #allGame {
         background-color: rgb(238, 238, 238);
         transition: all 0.5s ease;
 
-        h2
-        {
+        h2 {
             color: $LightPrimary;
             font-family: $TitleFont;
             font-weight: bold;
             transition: all 0.5s ease;
         }
     }
-    #allGame .optionsBra section{
+    #allGame .optionsBra section {
         background-color: $LightButton;
-        
     }
-    #allGame .optionsBra section a{
-        
+    #allGame .optionsBra section a {
         font-family: $TitleFont;
         color: $LightBG;
         font-weight: bold;
         transition: all 0.5s ease;
     }
 
-    footer
-    {
+    footer {
         background-color: $LightSecondary;
-        img
-        {
+        img {
             filter: invert(1);
             transition: all 0.5s ease;
         }
     }
-    #BrackForm
-    {
+    #BrackForm {
         color: $LightButton;
         font-family: $TitleFont;
         background-color: rgb(238, 238, 238);
         transition: all 0.5s ease;
     }
-    #TeamForm
-    {
+    #TeamForm {
         color: $LightButton;
         font-family: $TitleFont;
         background-color: rgb(238, 238, 238);
         transition: all 0.5s ease;
     }
-    #BrackList
-    {
+    #BrackList {
         color: rgb(238, 238, 238);
         font-family: $TitleFont;
         transition: all 0.5s ease;
 
-        a
-        {
+        a {
             text-decoration: none;
         }
-        .BrackCard
-        {
+        .BrackCard {
             background-color: $LightButton;
             transition: all 0.5s ease;
             text-decoration: none;
@@ -531,32 +488,33 @@ $ButtonFont: $TitleFont;
     }
 }
 
-.dark-theme 
-{
+.dark-theme {
     background-color: $DarkPrimary;
     transition: all 0.5s ease;
-    header
-    {
+    header {
         background-color: $DarkBG;
         transition: all 0.5s ease;
 
-        .LDswitch
-        {
-            width: 30px;
+        .LDswitch {
+            width: 10%;
             filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(115deg) brightness(105%) contrast(107%);
             cursor: pointer;
             transition: 0.5s;
         }
-        .LDswitch:hover
-        {
+        .LDswitch:hover {
             transform: scale(0.8);
             filter: invert(42%) sepia(83%) saturate(2325%) hue-rotate(327deg) brightness(105%) contrast(99%);
             transition: 0.5s;
         }
+        .isCo {
+            font-family: $TextFont;
+            color: white;
+        }
     }
 
-    #log .logInBut, #log .signUpBut, #log .logOutBut
-    {
+    #log .logInBut,
+    #log .signUpBut,
+    #log .logOutBut {
         font-family: $TitleFont;
         background-color: $LightPrimary;
         color: $DarkText;
@@ -564,85 +522,71 @@ $ButtonFont: $TitleFont;
         transition: all 0.5s ease;
     }
 
-    #info
-    {
+    #info {
         background-color: $DarkPrimary;
         color: $DarkText;
         transition: all 0.5s ease;
     }
 
-    #info h1
-    {
+    #info h1 {
         font-family: $LdvFont;
     }
 
-    #info p
-    {
+    #info p {
         font-family: $TextFont;
     }
 
-    #allGame
-    {
+    #allGame {
         background-color: rgb(63, 63, 63);
         transition: all 0.5s ease;
 
-        h2
-        {
+        h2 {
             color: $DarkButton;
             font-family: $TitleFont;
             font-weight: bold;
             transition: all 0.5s ease;
         }
     }
-    #allGame .optionsBra section{
+    #allGame .optionsBra section {
         background-color: $DarkButton;
         transition: all 0.5s ease;
-        
     }
-    #allGame .optionsBra section a{
-        
+    #allGame .optionsBra section a {
         font-family: $TitleFont;
         color: $DarkSecondary;
         font-weight: bold;
         transition: all 0.5s ease;
     }
 
-    footer
-    {
+    footer {
         background-color: $DarkBG;
-        img
-        {
+        img {
             filter: invert(1);
             transition: all 0.5s ease;
         }
     }
 
-    #BrackForm
-    {
+    #BrackForm {
         color: $DarkButton;
         font-family: $TitleFont;
         background-color: rgb(63, 63, 63);
         transition: all 0.5s ease;
     }
-    #TeamForm
-    {
+    #TeamForm {
         color: $DarkButton;
         font-family: $TitleFont;
         background-color: rgb(63, 63, 63);
         transition: all 0.5s ease;
     }
-    #BrackList
-    {
+    #BrackList {
         color: $DarkButton;
         font-family: $TitleFont;
         transition: all 0.5s ease;
 
-        a
-        {
+        a {
             text-decoration: none;
         }
-        .BrackCard
-        {
+        .BrackCard {
             background-color: rgb(223, 223, 223);
             transition: all 0.5s ease;
             text-decoration: none;
@@ -651,28 +595,25 @@ $ButtonFont: $TitleFont;
     }
 }
 
-#BrackForm
-{
+#BrackForm {
     padding: 5%;
 
-    form
-    {
+    form {
         display: flex;
         justify-content: center;
         width: 100%;
 
-        div
-        {
-            display:grid;
+        div {
+            display: grid;
             grid-template-columns: max-content max-content;
-            grid-gap:5px;
+            grid-gap: 5px;
 
-            label, input
-            {
+            label,
+            input {
                 margin: 10% 0%;
             }
-            input, textarea
-            {
+            input,
+            textarea {
                 resize: none;
                 border: 1px solid $DarkPrimary;
                 border-radius: 5px;
@@ -681,80 +622,66 @@ $ButtonFont: $TitleFont;
     }
 }
 
-#TeamForm
-{
+#TeamForm {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     padding: 3% 0;
-    form
-    {
-        
-        div
-        {
-            display:grid;
+    form {
+        div {
+            display: grid;
             grid-template-columns: max-content max-content;
-            grid-gap:50px;
+            grid-gap: 50px;
 
-            input
-            {
+            input {
                 border-radius: 5px;
                 border: 1px solid $DarkPrimary;
             }
-
         }
     }
 }
-#BrackList
-{
-    h1
-    {
+#BrackList {
+    h1 {
         text-align: center;
     }
-    .BrackCard
-    {
+    .BrackCard {
         margin: 10% 20% 12% 20%;
         padding: 3%;
         border-radius: 30px;
 
-        h2
-        {
+        h2 {
             margin: 0;
         }
-        .BrackMakerBlock
-        {
+        .BrackMakerBlock {
             display: flex;
             align-items: center;
-            img
-            {
+            img {
                 width: 10vh;
                 height: 10vh;
                 border-radius: 100%;
                 object-fit: cover;
                 margin-right: 2%;
             }
-            .BrackAuth
-            {
+            .BrackAuth {
                 margin: 0;
             }
         }
-        .BrackDesc
-        {
+        .BrackDesc {
             margin: 3% 0 0 0;
         }
     }
 }
-.Row_style{
+.Row_style {
     display: flex;
     height: 80vh;
-    .Column{
+    .Column {
         width: 25%;
         justify-content: space-around;
         align-items: center;
         display: flex;
         flex-direction: column;
-        div{
+        div {
             padding: 10px 20px;
             background-color: $LightBG;
             border-radius: 10px;
@@ -763,9 +690,8 @@ $ButtonFont: $TitleFont;
             border-color: #210089 #fe5260 #fe5260 #210089;
         }
     }
-    p{
+    p {
         color: $DarkButton;
         font-family: $TitleFont;
-
     }
 }
