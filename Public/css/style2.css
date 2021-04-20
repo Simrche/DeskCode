@@ -627,3 +627,73 @@ footer {
 }
 
 /*# sourceMappingURL=style2.css.map */
+
+
+@media screen and (max-width:769px) {
+ 
+ header{
+    width: 1000px;
+  }
+
+  header article {
+   padding: 20px;
+  }
+
+  #log{
+    margin-right: 50px;
+  }
+
+  #log .logButs{
+    margin-right: 10px;
+    height: 100px;
+  }
+
+ #log .logInBut,#log .signUpBut{
+   padding-top: 25px;
+   font-size: 20px;
+ }
+
+  main{
+    width: 1000px;
+  }
+
+  #info h1{
+    font-size: 60px;
+  }
+
+  #info p{
+    font-size: 30px;
+    width: 75%;
+  }
+
+  #allGame h2{
+      font-size: 45px;
+  }
+
+  .optionsBra{
+    height: 200px;
+  }
+
+  .optionsBra a{
+    font-size: 20px;
+   text-align: center;
+  }
+
+  footer{
+    width: 1000px;
+  }
+
+  .signUp{
+    width: 700px;
+  }
+
+  .signUp h2{
+    font-size: 35px;
+    margin-bottom: 50px;
+  }
+
+  .signUp input{
+    height: 50px;
+  }
+
+}
