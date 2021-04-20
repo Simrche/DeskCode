@@ -716,7 +716,30 @@ footer {
     height: 200px;
   }
 
+  header img{
+    width: 200px;
+  }
 
+  #log{
+    height: 100%;
+    margin-bottom: 25px;
+  }
+
+  .dark-theme header .LDswitch,.light-theme header .LDswitch:hover{
+    width: 25%;
+    margin-top: 20%;
+    margin-left: 5%;
+  }
+
+  #log .logButs{
+    display: block;
+  }
+
+  #log .logInBut,#log .signUpBut{
+    font-size: 30px;
+    margin-bottom: 5px;
+    padding-top: 12px;
+  }
 
   #info p{
     font-size: 40px;
@@ -739,7 +762,7 @@ footer {
   #allGame .optionsBra section{
     margin: 50px auto;
     height: 200px;
-    width: 500px;
+    width: 75%;
   }    
   #allGame .optionsBra section a{
     font-size: 35px;
