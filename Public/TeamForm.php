@@ -30,7 +30,7 @@ SignInC::deconnexionU();
 <?php Site::headSite(); ?>
 
 
-<body class="light-theme">
+<body class="dark-theme">
     <?php
     SignInC::signUp();
     SignInC::logIn();
@@ -39,10 +39,9 @@ SignInC::deconnexionU();
     <div id="TeamForm">
         <form action="">
             <div>
-            <label for="">Nom : </label><input type="text">
-
                 <?php
                 // if(teams==true){
+                    TeamForm::theName();
                     TeamForm::members(3);
 
                 // }
