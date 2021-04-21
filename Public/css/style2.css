@@ -443,6 +443,10 @@ footer {
   background-color: #eeeeee;
   transition: all 0.5s ease;
 }
+.light-theme #BrackForm h1 {
+  text-align: center;
+  margin: auto;
+}
 .light-theme #TeamForm {
   color: #fe5261;
   font-family: "Nunito";
@@ -539,6 +543,10 @@ footer {
   font-family: "Nunito";
   background-color: #3f3f3f;
   transition: all 0.5s ease;
+}
+.dark-theme #BrackForm h1 {
+  text-align: center;
+  margin: auto;
 }
 .dark-theme #TeamForm {
   color: #fe5261;
