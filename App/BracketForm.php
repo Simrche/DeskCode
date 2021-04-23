@@ -10,35 +10,44 @@ class BracketForm extends Site
     {
     }
 
-    public static function labels()
+    public static function form()
     { ?>
-        <label for="">Date: </label><input type="text">
+        <form action="ListTournois.php" method="post">
+                <div>
+                    <label for="">Titre : </label><input type="text" name="titre">
 
-        <label for="">Lieu: </label><input type="text">
+                    <label for="">Date: </label><input type="date" name="date">
 
-        <label for="">Nombre d'équipes: </label><input type="text">
+                    <label for="">Jeu :</label>
+                    <select name="jeu" id="jeu">
+                        <option value="">Jeu</option>
+                        <option value="league of legends">League of legends</option>
+                        <option value="rocket league">Rocket league</option>
+                    </select>
 
-        <label for="">Loser Bracket: </label>
-        <div><input type="radio" name="LoserRad">OUI<input type="radio" name="LoserRad">NON</div>
+                    <label for="">Nombre d'équipes: </label>
+                    <select name="nombreEquipe" id="equipe">
+                        <option value="">Nombre équipe</option>
+                        <option value="4">4</option>
+                    </select>
 
-        <label for="">Match: </label>
-        <select name="pets" id="pet-select">
-            <option value="">--Please choose an option--</option>
-            <option value="bo1">BO1</option>
-            <option value="bo2">BO3</option>
-            <option value="bo3">BO5</option>
-        </select>
+                    <label for="">Equipe 1</label><input type="text" name="equipe1">
 
-        <label for="">Match finale: </label>
-        <div><input type="radio" name="FinalRad">BO1<input type="radio" name="FinalRad">BO3<input type="radio" name="FinalRad">BO5</div>
+                    <label for="">Equipe 2</label><input type="text" name="equipe2">
 
-        <label for="">1er prix: </label><input type="text">
+                    <label for="">Equipe 3</label><input type="text" name="equipe3">
 
-        <label for="">Second Prix: </label><input type="text">
+                    <label for="">Equipe 4</label><input type="text" name="equipe4">
 
-        <label for="">Troisième prix: </label><input type="text">
+                    <label for="">1er prix: </label><input type="text" name="1prix">
 
-        <label for="">Description: </label><textarea></textarea>
+                    <label for="">Second Prix: </label><input type="text" name="2prix">
+
+                    <label for="">Troisième prix: </label><input type="text" name="3prix">
+
+                    <label for="">Description: </label><textarea name="desc"></textarea>
+
+                    <input type="submit" value="Créer" name="envoyer">
 <?php
     }
 }
