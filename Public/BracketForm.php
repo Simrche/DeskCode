@@ -6,7 +6,7 @@ $bdd = new PDO("mysql:host=localhost;dbname=deskcode;charset=utf8", $indivRoots,
 $ajoutUsers = $bdd->prepare("INSERT INTO users(users_pseudo, users_mdp, users_email) VALUES(?, ?, ?);");
 $connexion =  $bdd->prepare('SELECT users_mdp FROM users WHERE users_pseudo=:pseudo');
 
-
+use App\BracketForm;
 use App\Site;
 use App\SignInC;
 
@@ -39,7 +39,7 @@ $ajoutTournois = $bdd->prepare("INSERT INTO tournois4(titre, jeu, equipe1, equip
     <?php
     Site::headerSite();
     ?>
-        <div id="BrackForm">
+    <div id="BrackForm">
         <?php if (isset($_SESSION['pseudo'])) { ?>
             <form action="ListTournois.php" method="post">
                 <div>
@@ -77,13 +77,21 @@ $ajoutTournois = $bdd->prepare("INSERT INTO tournois4(titre, jeu, equipe1, equip
                     <label for="">Description: </label><textarea name="desc"></textarea>
 
                     <input type="submit" value="Créer" name="envoyer">
+                    <!-- <h1>Créer un nouveau Bracket</h1> -->
+                    <!-- <form action="">
+                <div>
+                    <?php
+                    // BracketForm::labels() 
+                    ?>
                 </div>
-            </form>
-        </div>
+            </form> -->
+                </div>
 
-        <?php } else {
+            <?php } else {
             header("location:index.php");
         } ?>
+            </form>
+    </div>
 
 
     <?php
