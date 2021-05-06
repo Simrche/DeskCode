@@ -415,6 +415,10 @@ footer {
   font-weight: bold;
   transition: all 0.5s ease;
 }
+.light-theme #log .logOutBut input, .light-theme .SendBut input {
+  outline: none;
+  cursor: pointer;
+}
 .light-theme #info {
   background-color: white;
   color: #0c0037;
@@ -524,7 +528,7 @@ footer {
   font-weight: bold;
   transition: all 0.5s ease;
 }
-.dark-theme #log .logOutBut input {
+.dark-theme #log .logOutBut input, .dark-theme .SendBut input {
   outline: none;
   cursor: pointer;
 }
@@ -610,6 +614,7 @@ footer {
 #BrackForm form {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
 }
 #BrackForm form div {
@@ -635,6 +640,11 @@ footer {
 #BrackForm form div textarea {
   height: 60px;
   width: 200px;
+}
+#BrackForm form div .SendBut {
+  display: flex;
+  width: 100%;
+  margin: 0 0 0 50%;
 }
 
 #TeamForm {

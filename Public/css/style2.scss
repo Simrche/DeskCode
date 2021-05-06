@@ -434,6 +434,12 @@ $ButtonFont: $TitleFont;
         transition: all 0.5s ease;
     }
 
+    #log .logOutBut input, .SendBut input 
+    {
+        outline: none;
+        cursor: pointer;
+    }
+
     #info {
         background-color: $LightBG;
         color: $LightText;
@@ -553,7 +559,7 @@ $ButtonFont: $TitleFont;
         transition: all 0.5s ease;
     }
 
-    #log .logOutBut input 
+    #log .logOutBut input, .SendBut input 
     {
         outline: none;
         cursor: pointer;
@@ -650,6 +656,7 @@ $ButtonFont: $TitleFont;
     form {
         display: flex;
         justify-content: center;
+        align-items: center;
         width: 100%;
 
         div {
@@ -677,6 +684,12 @@ $ButtonFont: $TitleFont;
             {
                 height: 60px;
                 width: 200px;
+            }
+            .SendBut
+            {
+                display: flex;
+                width: 100%;
+                margin: 0 0 0 50%;
             }
         }
     }
