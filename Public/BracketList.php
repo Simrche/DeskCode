@@ -39,31 +39,7 @@ SignInC::deconnexionU();
     ?>
         <div id="BrackList">
             <h1 class="listTitle">Vos Brackets : </h1>
-        <a href="./Lien">
-                <div class="BrackCard">
-                    <div class="BrackMakerBlock">
-                        <img src="https://image.freepik.com/vecteurs-libre/esports-logo-assassin-team_70404-18.jpg" alt="">
-                        <div>
-                            <h2>Bracket 3</h2>
-                            <p class="BrackAuth">Auteur 3</p>
-                        </div>
-                    </div>
-                    <p class="BrackDesc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea nobis ducimus nisi ipsam. Similique labore voluptatum corporis ea unde, magni a sunt, accusamus excepturi animi harum neque mollitia. Iusto, fugiat.</p>
-                </div>
-            </a> 
             <a href="./Lien">
-                <div class="BrackCard">
-                    <div class="BrackMakerBlock">
-                        <img src="https://image.freepik.com/vecteurs-libre/esports-logo-assassin-team_70404-18.jpg" alt="">
-                        <div>
-                            <h2>Bracket 3</h2>
-                            <p class="BrackAuth">Auteur 3</p>
-                        </div>
-                    </div>
-                    <p class="BrackDesc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea nobis ducimus nisi ipsam. Similique labore voluptatum corporis ea unde, magni a sunt, accusamus excepturi animi harum neque mollitia. Iusto, fugiat.</p>
-                </div>
-            </a> 
-           <a href="./Lien">
                 <div class="BrackCard">
                     <div class="BrackMakerBlock">
                         <img src="https://image.freepik.com/vecteurs-libre/esports-logo-assassin-team_70404-18.jpg" alt="">

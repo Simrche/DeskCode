@@ -6,7 +6,7 @@ $bdd = new PDO("mysql:host=localhost;dbname=deskcode;charset=utf8", $indivRoots,
 $ajoutUsers = $bdd->prepare("INSERT INTO users(users_pseudo, users_mdp, users_email) VALUES(?, ?, ?);");
 $connexion =  $bdd->prepare('SELECT users_mdp FROM users WHERE users_pseudo=:pseudo');
 
-
+use App\BracketForm;
 use App\Site;
 use App\SignInC;
 
@@ -39,8 +39,9 @@ $ajoutTournois = $bdd->prepare("INSERT INTO tournois4(titre, jeu, equipe1, equip
     <?php
     Site::headerSite();
     ?>
-        <div id="BrackForm">
+    <div id="BrackForm">
         <?php if (isset($_SESSION['pseudo'])) { ?>
+<<<<<<< HEAD
             <form action="redirection.php" method="post">
                 <div>
                     <label for="">Titre : </label><input type="text" name="titre">
@@ -67,29 +68,27 @@ $ajoutTournois = $bdd->prepare("INSERT INTO tournois4(titre, jeu, equipe1, equip
                     <label for="">Equipe 3</label><input type="text" name="equipe3">
 
                     <label for="">Equipe 4</label><input type="text" name="equipe4">
+=======
+>>>>>>> 2e12306ebbdc10707ffcf8f3fd92ae619ee17c25
 
-                    <label for="">1er prix: </label><input type="text" name="1prix">
 
-                    <label for="">Second Prix: </label><input type="text" name="2prix">
+            <?php
+            BracketForm::form()
+            ?>
+    </div>
+    </div>
 
-                    <label for="">Troisième prix: </label><input type="text" name="3prix">
-
-                    <label for="">Description: </label><textarea name="desc"></textarea>
-
-                    <input type="submit" value="Créer" name="envoyer">
-                </div>
-            </form>
-        </div>
-
-        <?php } else {
+<?php } else {
             header("location:index.php");
         } ?>
+</form>
+</div>
 
 
-    <?php
-    Site::footerSite();
-    Site::scripts()
-    ?>
+<?php
+Site::footerSite();
+Site::scripts()
+?>
 </body>
 
 

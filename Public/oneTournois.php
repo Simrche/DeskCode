@@ -72,19 +72,19 @@ if(isset($_POST['6'])) {
         <section id="info">
             <h2><?= $recupTournoisFetch['titre'] ?></h2>
         </section>
-        <section id="arbre">
-            <div class="arbre2">
+        <section class="Row_style">
+            <div class="Column">
                 <div class="equipe"><?= $recupTournoisFetch['equipe1'] ?><form action="#" method="post"><input type="submit" value="🏆" name="1"></form></div>
                 <div class="equipe"><?= $recupTournoisFetch['equipe2'] ?><form action="#" method="post"><input type="submit" value="🏆" name="2"></form></div>
                 <br>
                 <div class="equipe"><?= $recupTournoisFetch['equipe3'] ?><form action="#" method="post"><input type="submit" value="🏆" name="3"></form></div>
                 <div class="equipe"><?= $recupTournoisFetch['equipe4'] ?><form action="#" method="post"><input type="submit" value="🏆" name="4"></form></div>
             </div>
-            <div class="arbre2">
+            <div class="Column">
                 <div class="equipe"><?= $recupTournoisFetch['vainqueur1'] ?><form action="#" method="post"><input type="submit" value="🏆" name="5"></form></div>
                 <div class="equipe"><?= $recupTournoisFetch['vainqueur2'] ?><form action="#" method="post"><input type="submit" value="🏆" name="6"></form></div>
             </div>
-            <div class="arbre2">
+            <div class="Column">
                 <div class="equipe"><?= $recupTournoisFetch['vainqueur3'] ?></div>
             </div>
         </section>

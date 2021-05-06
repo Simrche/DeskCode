@@ -31,20 +31,28 @@ $recupTournoisFetch = $recupTournois->fetchAll();
     <?php
     Site::headerSite();
     ?>
-    <main>
         <?php if (isset($_SESSION['pseudo'])) { ?>
-            <h2>MES TOURNOIS</h2>
-        <ul>
+            <div id="BrackList">
+            <h1 class="listTitle">Mes Tournois : </h1> 
             <?php 
                 foreach ($recupTournoisFetch as $value) { ?>
-                    <li><a href="oneTournois.php?id=<?= $value["id"] ?>"><?= $value['titre'];?></a></li>
+                <a href="oneTournois.php?id=<?= $value["id"] ?>">
+                    <div class="BrackCard">
+                        <div class="BrackMakerBlock">
+                            <div>
+                                <h2><?= $value['titre'];?></h2>
+                                <p class="BrackAuth">Auteur 3</p>
+                            </div>
+                        </div>
+                        <p class="BrackDesc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea nobis ducimus nisi ipsam. Similique labore voluptatum corporis ea unde, magni a sunt, accusamus excepturi animi harum neque mollitia. Iusto, fugiat.</p>
+                    </div>
+                </a>
              <?php   }
             ?>
-        </ul>
+        </div>
         <?php } else {
             header("location:index.php");
         } ?>
-    </main>
 
 
     <?php

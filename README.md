@@ -2,7 +2,7 @@
 La meilleur team d'Europe
 
 
-LDV Brackets (Nom provisoire) est une plateforme de création et de monotoring des matchs et classements réalisé par l'association LDV Esport au Pôle Léonard de Vinci. 
+DeskCode est une plateforme de création et de monotoring des matchs et classements réalisé par l'association LDV Esport au Pôle Léonard de Vinci. 
       <br>Ce site permettra plusieurs choses : <br>
             - Créer des brackets personalisables avec une interface intuitive<br>
             - Créer des classements avec une interface similaire<br>

@@ -12,7 +12,7 @@ class TeamForm extends Site
 
     public static function theName()
     { ?>
-        <label for="">Nom : </label><input type="text">
+        <label for="">Nom de l'équipe : </label><input type="text">
     <?php
     }
 
