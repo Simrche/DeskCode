@@ -411,7 +411,9 @@ $ButtonFont: $TitleFont;
 
     #log .logInBut,
     #log .signUpBut,
-    #log .logOutBut {
+    #log .logOutBut,
+    #log .logOutBut input,
+    .SendBut input {
         font-family: $TitleFont;
         background-color: $LightPrimary;
         color: $LightBG;
@@ -466,6 +468,14 @@ $ButtonFont: $TitleFont;
         font-family: $TitleFont;
         background-color: rgb(238, 238, 238);
         transition: all 0.5s ease;
+
+        input,
+        textarea,
+        select {
+            border: 1px solid rgb(192, 192, 192);
+            font-family: $TitleFont;
+            transition: all 0.5s ease;
+        }
         h1{
             text-align: center;
             margin: auto;
@@ -520,12 +530,20 @@ $ButtonFont: $TitleFont;
 
     #log .logInBut,
     #log .signUpBut,
-    #log .logOutBut {
+    #log .logOutBut,
+    #log .logOutBut input,
+    .SendBut input {
         font-family: $TitleFont;
         background-color: $LightPrimary;
         color: $DarkText;
         font-weight: bold;
         transition: all 0.5s ease;
+    }
+
+    #log .logOutBut input 
+    {
+        outline: none;
+        cursor: pointer;
     }
 
     #info {
@@ -577,6 +595,14 @@ $ButtonFont: $TitleFont;
         font-family: $TitleFont;
         background-color: rgb(63, 63, 63);
         transition: all 0.5s ease;
+
+        input,
+        textarea,
+        select {
+            border: none;
+            font-family: $TitleFont;
+            transition: all 0.5s ease;
+        }
         h1{
             text-align: center;
             margin: auto;
@@ -619,14 +645,25 @@ $ButtonFont: $TitleFont;
             grid-gap: 5px;
 
             label,
-            input {
-                margin: 10% 0%;
-            }
             input,
-            textarea {
+            textarea,
+            select {
                 resize: none;
-                border: 1px solid $DarkPrimary;
-                border-radius: 5px;
+                margin: 10% 15%;
+                border-radius: 10px;
+                outline: none;
+            }
+            label,
+            input,
+            select
+            {
+                height: 35px;
+                width: 200px;
+            }
+            textarea
+            {
+                height: 60px;
+                width: 200px;
             }
         }
     }

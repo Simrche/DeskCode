@@ -46,8 +46,10 @@ class BracketForm extends Site
                     <label for="">Troisième prix: </label><input type="text" name="3prix">
 
                     <label for="">Description: </label><textarea name="desc"></textarea>
-
-                    <input type="submit" value="Créer" name="envoyer">
+                    <p class="SendBut">
+                        <input type="submit" value="Créer" name="envoyer">
+                    </p>
+                    
 <?php
     }
 }

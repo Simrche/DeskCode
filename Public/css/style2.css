@@ -393,7 +393,9 @@ footer {
 }
 .light-theme #log .logInBut,
 .light-theme #log .signUpBut,
-.light-theme #log .logOutBut {
+.light-theme #log .logOutBut,
+.light-theme #log .logOutBut input,
+.light-theme .SendBut input {
   font-family: "Nunito";
   background-color: #fe5261;
   color: white;
@@ -441,6 +443,13 @@ footer {
   color: #fe5261;
   font-family: "Nunito";
   background-color: #eeeeee;
+  transition: all 0.5s ease;
+}
+.light-theme #BrackForm input,
+.light-theme #BrackForm textarea,
+.light-theme #BrackForm select {
+  border: 1px solid silver;
+  font-family: "Nunito";
   transition: all 0.5s ease;
 }
 .light-theme #BrackForm h1 {
@@ -493,12 +502,18 @@ footer {
 }
 .dark-theme #log .logInBut,
 .dark-theme #log .signUpBut,
-.dark-theme #log .logOutBut {
+.dark-theme #log .logOutBut,
+.dark-theme #log .logOutBut input,
+.dark-theme .SendBut input {
   font-family: "Nunito";
   background-color: #fe5261;
   color: white;
   font-weight: bold;
   transition: all 0.5s ease;
+}
+.dark-theme #log .logOutBut input {
+  outline: none;
+  cursor: pointer;
 }
 .dark-theme #info {
   background-color: #272727;
@@ -544,6 +559,13 @@ footer {
   background-color: #3f3f3f;
   transition: all 0.5s ease;
 }
+.dark-theme #BrackForm input,
+.dark-theme #BrackForm textarea,
+.dark-theme #BrackForm select {
+  border: none;
+  font-family: "Nunito";
+  transition: all 0.5s ease;
+}
 .dark-theme #BrackForm h1 {
   text-align: center;
   margin: auto;
@@ -583,14 +605,23 @@ footer {
   grid-gap: 5px;
 }
 #BrackForm form div label,
-#BrackForm form div input {
-  margin: 10% 0%;
-}
 #BrackForm form div input,
-#BrackForm form div textarea {
+#BrackForm form div textarea,
+#BrackForm form div select {
   resize: none;
-  border: 1px solid #272727;
-  border-radius: 5px;
+  margin: 10% 15%;
+  border-radius: 10px;
+  outline: none;
+}
+#BrackForm form div label,
+#BrackForm form div input,
+#BrackForm form div select {
+  height: 35px;
+  width: 200px;
+}
+#BrackForm form div textarea {
+  height: 60px;
+  width: 200px;
 }
 
 #TeamForm {
