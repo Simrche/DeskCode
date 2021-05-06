@@ -33,6 +33,9 @@ $('.forbidenAccess').click(function () {
 $('.connectFromForbid').click(function () {
     $(".forbidenPopUpBg").hide();
 });
+$('.closeBut').click(function () {
+    $(".forbidenPopUpBg").hide();
+});
 
 
 // tlCo.staggerFrom('.signUpBg', 0.1, { x: 0, y: 0, opacity: 0 });
