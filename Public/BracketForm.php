@@ -41,7 +41,6 @@ $ajoutTournois = $bdd->prepare("INSERT INTO tournois4(titre, jeu, equipe1, equip
     ?>
     <div id="BrackForm">
         <?php if (isset($_SESSION['pseudo'])) { ?>
-<<<<<<< HEAD
             <form action="redirection.php" method="post">
                 <div>
                     <label for="">Titre : </label><input type="text" name="titre">
@@ -68,8 +67,6 @@ $ajoutTournois = $bdd->prepare("INSERT INTO tournois4(titre, jeu, equipe1, equip
                     <label for="">Equipe 3</label><input type="text" name="equipe3">
 
                     <label for="">Equipe 4</label><input type="text" name="equipe4">
-=======
->>>>>>> 2e12306ebbdc10707ffcf8f3fd92ae619ee17c25
 
 
             <?php
