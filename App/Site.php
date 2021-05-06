@@ -88,6 +88,20 @@ abstract class Site
     <?php
     }
 
+    public static function forbiden()
+    { ?>
+        <article class="forbidenPopUpBg">
+
+            <section class="forbidenPopUp">
+                <button class="closeBut"><i class="fas fa-times fa-2x"></i></button>
+                <h2>Acces interdit</h2>
+                <p>Pour acceder à cette page vous devez être connecter</p>
+                <button class="subBut connectFromForbid signUpBut">Se conneter</button>
+                
+            </section>
+        </article>
+    <?php }
+
     public static function scripts()
     {
     ?>
