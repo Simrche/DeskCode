@@ -52,6 +52,10 @@ if(isset($_POST['6'])) {
     header('location: oneTournois.php?id=' . $_GET['id'] . "'");
 }
 
+$monTournoi = false;
+if($_SESSION['pseudo'] == $recupTournoisFetch['createur']) {
+    $monTournoi = true;
+}
 
 ?>
 
@@ -74,15 +78,15 @@ if(isset($_POST['6'])) {
         </section>
         <section class="Row_style">
             <div class="Column">
-                <div class="equipe"><?= $recupTournoisFetch['equipe1'] ?><form action="#" method="post"><input type="submit" value="🏆" name="1"></form></div>
-                <div class="equipe"><?= $recupTournoisFetch['equipe2'] ?><form action="#" method="post"><input type="submit" value="🏆" name="2"></form></div>
+                <div class="equipe"><?= $recupTournoisFetch['equipe1'] ?><form action="#" method="post"><?php if($monTournoi == true){?><input type="submit" value="🏆" name="1"><?php } ?></form></div>
+                <div class="equipe"><?= $recupTournoisFetch['equipe2'] ?><form action="#" method="post"><?php if($monTournoi == true){?><input type="submit" value="🏆" name="2"><?php } ?></form></div>
                 <br>
-                <div class="equipe"><?= $recupTournoisFetch['equipe3'] ?><form action="#" method="post"><input type="submit" value="🏆" name="3"></form></div>
-                <div class="equipe"><?= $recupTournoisFetch['equipe4'] ?><form action="#" method="post"><input type="submit" value="🏆" name="4"></form></div>
+                <div class="equipe"><?= $recupTournoisFetch['equipe3'] ?><form action="#" method="post"><?php if($monTournoi == true){?><input type="submit" value="🏆" name="3"><?php } ?></form></div>
+                <div class="equipe"><?= $recupTournoisFetch['equipe4'] ?><form action="#" method="post"><?php if($monTournoi == true){?><input type="submit" value="🏆" name="4"><?php } ?></form></div>
             </div>
             <div class="Column">
-                <div class="equipe"><?= $recupTournoisFetch['vainqueur1'] ?><form action="#" method="post"><input type="submit" value="🏆" name="5"></form></div>
-                <div class="equipe"><?= $recupTournoisFetch['vainqueur2'] ?><form action="#" method="post"><input type="submit" value="🏆" name="6"></form></div>
+                <div class="equipe"><?= $recupTournoisFetch['vainqueur1'] ?><form action="#" method="post"><?php if($monTournoi == true){?><input type="submit" value="🏆" name="5"><?php } ?></form></div>
+                <div class="equipe"><?= $recupTournoisFetch['vainqueur2'] ?><form action="#" method="post"><?php if($monTournoi == true){?><input type="submit" value="🏆" name="6"><?php } ?></form></div>
             </div>
             <div class="Column">
                 <div class="equipe"><?= $recupTournoisFetch['vainqueur3'] ?></div>
@@ -143,7 +147,6 @@ if(isset($_POST['6'])) {
 
 #lien input {
     text-align: center;
-
 }
 
 </style>

@@ -12,7 +12,7 @@ Autoloader::register();
 
 SignInC::deconnexionU();
 
-$recupTournois =  $bdd->prepare('SELECT id, titre, jeu, createur, descr FROM tournois4 WHERE createur=:pseudo');
+$recupTournois =  $bdd->prepare('SELECT id, titre, jeu, createur, descr FROM tournois4 WHERE createur=:pseudo ORDER BY id DESC');
 $recupTournois->execute(array('pseudo' => $_SESSION['pseudo']));
 $recupTournoisFetch = $recupTournois->fetchAll();
 
