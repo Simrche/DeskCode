@@ -88,6 +88,11 @@ abstract class Site
     <?php
     }
 
+    public static function forbiden()
+    {
+        
+    }
+
     public static function scripts()
     {
     ?>
