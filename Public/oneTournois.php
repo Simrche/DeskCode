@@ -152,10 +152,12 @@ if($_SESSION['pseudo'] == $recupTournoisFetch['createur']) {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    width: 70%;
 }
 
 #lien input {
     text-align: center;
+    width: 80%;
 }
 
 </style>
