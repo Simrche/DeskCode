@@ -41,36 +41,8 @@ $ajoutTournois = $bdd->prepare("INSERT INTO tournois4(titre, jeu, equipe1, equip
     ?>
     <div id="BrackForm">
         <?php if (isset($_SESSION['pseudo'])) { ?>
-            <form action="redirection.php" method="post">
-                <div>
-                    <label for="">Titre : </label><input type="text" name="titre">
-
-                    <label for="">Date: </label><input type="date" name="date">
-
-                    <label for="">Jeu :</label>
-                    <select name="jeu" id="jeu">
-                        <option value="">Jeu</option>
-                        <option value="league of legends">League of legends</option>
-                        <option value="rocket league">Rocket league</option>
-                    </select>
-
-                    <label for="">Nombre d'équipes: </label>
-                    <select name="nombreEquipe" id="equipe">
-                        <option value="">Nombre équipe</option>
-                        <option value="4">4</option>
-                    </select>
-
-                    <label for="">Equipe 1</label><input type="text" name="equipe1">
-
-                    <label for="">Equipe 2</label><input type="text" name="equipe2">
-
-                    <label for="">Equipe 3</label><input type="text" name="equipe3">
-
-                    <label for="">Equipe 4</label><input type="text" name="equipe4">
-
-
             <?php
-            BracketForm::form()
+                BracketForm::form()
             ?>
     </div>
     </div>

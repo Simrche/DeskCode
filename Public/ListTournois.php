@@ -12,7 +12,7 @@ Autoloader::register();
 
 SignInC::deconnexionU();
 
-$recupTournois =  $bdd->prepare('SELECT id, titre, jeu FROM tournois4 WHERE createur=:pseudo');
+$recupTournois =  $bdd->prepare('SELECT id, titre, jeu, createur, descr FROM tournois4 WHERE createur=:pseudo');
 $recupTournois->execute(array('pseudo' => $_SESSION['pseudo']));
 $recupTournoisFetch = $recupTournois->fetchAll();
 
@@ -41,10 +41,10 @@ $recupTournoisFetch = $recupTournois->fetchAll();
                         <div class="BrackMakerBlock">
                             <div>
                                 <h2><?= $value['titre'];?></h2>
-                                <p class="BrackAuth">Auteur 3</p>
+                                <p class="BrackAuth"><?= $value['createur']?></p>
                             </div>
                         </div>
-                        <p class="BrackDesc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea nobis ducimus nisi ipsam. Similique labore voluptatum corporis ea unde, magni a sunt, accusamus excepturi animi harum neque mollitia. Iusto, fugiat.</p>
+                        <p class="BrackDesc"><?= $value['descr']?></p>
                     </div>
                 </a>
              <?php   }
