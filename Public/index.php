@@ -33,6 +33,12 @@ SignInC::deconnexionU();
     <?php
     SignInC::signUp();
     SignInC::logIn();
+
+    if (empty($_SESSION['pseudo'])) {
+
+        Site::forbiden();
+    };
+
     ?>
     <?php
     Site::headerSite();
@@ -55,6 +61,21 @@ SignInC::deconnexionU();
                 <article class="optionsBra">
                     <section><a href="BracketForm.php">Création de Bracket</a></section>
                     <section><a href="ListTournois.php">Mes tournois</a></section>
+                </article>
+
+            </article>
+        <?php } else { ?>
+
+            <article id="allGame">
+                <h2>Les Jeux</h2>
+
+                <article class="optionsBra">
+                    <section class="forbidenAccess">
+                        <p>Création de Bracket</p>
+                    </section>
+                    <section class="forbidenAccess">
+                        <p>Mes tournois</p>
+                    </section>
                 </article>
 
             </article>

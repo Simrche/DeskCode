@@ -1,25 +1,17 @@
 // POP UP -------------------------------------------------------------------------
 $(".signUpBg").hide();
 $(".logInBg").hide();
+$(".forbidenPopUpBg").hide();
 var tlSign = new TimelineMax();
 var tlLog = new TimelineMax();
+var tlForbid = new TimelineMax();
 $('.signUpBut').click(function () {
     tlSign.staggerFrom('.signUpBg', 0, { x: 0, y: 0, opacity: 0 });
     tlSign.staggerFrom('.signUp', 0.8, { x: 0, y: 100, opacity: 0 });
     $(".signUpBg").show();
 
-    // $pseudo = document.getElementById(".pseudo").value;
-    // $email = document.getElementById(".email").value;
-    // $mdp = document.getElementById(".mdp").value;
-    // $mdpVerif = document.getElementById(".mdpVerif").value;
-
-    // // pour pouvoir afficher/activer le bouton
-    // if ($pseudo.lenght > 0 && $email.lenght > 0 && $mdp.lenght > 0 && $mdpVerif.lenght > 0) {
-    //     console.log("wsh");
-    //     $(".subBut").show();
-    // }
-
 });
+
 $('.closeBut').click(function () {
     $(".signUpBg").hide();
 });
@@ -31,6 +23,15 @@ $('.logInBut').click(function () {
 });
 $('.closeBut').click(function () {
     $(".logInBg").hide();
+});
+
+$('.forbidenAccess').click(function () {
+    tlForbid.staggerFrom('.forbidenPopUpBg', 0, { x: 0, y: 0, opacity: 0 });
+    tlForbid.staggerFrom('.forbidenPopUp', 0.8, { x: 0, y: 100, opacity: 0 });
+    $(".forbidenPopUpBg").show();
+});
+$('.connectFromForbid').click(function () {
+    $(".forbidenPopUpBg").hide();
 });
 
 
@@ -49,14 +50,12 @@ $('.closeBut').click(function () {
 // Fonction pour gérer le changement de classe pour le mode sombre
 
 $('.LDswitch').click(function () {
-    
-    if ($('body').attr('class') == "light-theme") 
-    {
+
+    if ($('body').attr('class') == "light-theme") {
         $("body").removeClass('light-theme');
         $("body").addClass('dark-theme');
     }
-    else
-    {
+    else {
         $("body").removeClass('dark-theme');
         $("body").addClass('light-theme');
     }

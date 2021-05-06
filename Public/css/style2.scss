@@ -102,8 +102,7 @@ body {
 }
 
 
-
-.signUpBg,
+.forbidenPopUpBg, .signUpBg,
 .logInBg {
     display: none;
 }
@@ -173,7 +172,7 @@ body {
 
 /* ---------------------------------------------------------- POP UP CONNEXION ----------------------------------------------------------- */
 .signUpBg,
-.logInBg {
+.logInBg, .forbidenPopUpBg {
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100vh;
@@ -184,7 +183,7 @@ body {
 }
 
 .signUp,
-.logIn {
+.logIn, .forbidenPopUp {
     width: 60%;
     height: 60vh;
     background-color: #eee;
@@ -199,6 +198,16 @@ body {
     border-color: #fe5260 #210089 #210089 #fe5260;
 }
 
+.forbidenPopUp {
+    width: 45%;
+    height: 45vh;
+
+}
+.forbidenPopUp p{
+    text-align: center;
+
+}
+
 .logIn {
     width: 45%;
     height: 45vh;
@@ -210,6 +219,7 @@ body {
 }
 
 .signUp .closeBut,
+.forbidenPopUp .closeBut,
 .logIn .closeBut {
     border-style: none;
     position: absolute;
@@ -225,6 +235,7 @@ body {
 }
 
 .signForm input,
+.forbidenPopUp .subBut,
 .logForm input {
     width: 30%;
     height: 5vh;
@@ -233,11 +244,13 @@ body {
 }
 
 .signForm input:not(.subBut),
+.forbidenPopUp input:not(.subBut),
 .logForm input:not(.subBut) {
     border: 0.3rem solid;
     border-color: #210089 #fe5260 #fe5260 #210089;
 }
 .signForm .subBut,
+.forbidenPopUp .subBut,
 .logForm .subBut {
     font-weight: bold;
     height: 7vh;
@@ -447,7 +460,7 @@ $ButtonFont: $TitleFont;
     #allGame .optionsBra section {
         background-color: $LightButton;
     }
-    #allGame .optionsBra section a {
+    #allGame .optionsBra section a,.forbidenAccess p {
         font-family: $TitleFont;
         color: $LightBG;
         font-weight: bold;
@@ -557,7 +570,7 @@ $ButtonFont: $TitleFont;
         background-color: $DarkButton;
         transition: all 0.5s ease;
     }
-    #allGame .optionsBra section a {
+    #allGame .optionsBra section a, .forbidenAccess p {
         font-family: $TitleFont;
         color: $DarkSecondary;
         font-weight: bold;
