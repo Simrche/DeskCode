@@ -12,7 +12,7 @@ Autoloader::register();
 
 SignInC::deconnexionU();
 
-$recupTournois =  $bdd->prepare('SELECT id, titre, jeu, equipe1, equipe2, equipe3, equipe4, vainqueur1, vainqueur2, vainqueur3, createur FROM tournois4 WHERE id=:id');
+$recupTournois =  $bdd->prepare('SELECT id, titre, jeu, equipe1, equipe2, equipe3, equipe4, vainqueur1, vainqueur2, vainqueur3, createur, descr, 1prix, 2prix, 3prix FROM tournois4 WHERE id=:id');
 $recupTournois->execute(array('id' => $_GET['id']));
 $recupTournoisFetch = $recupTournois->fetch();
 
@@ -75,27 +75,32 @@ if($_SESSION['pseudo'] == $recupTournoisFetch['createur']) {
     <main id="mainArbre">
         <section id="info">
             <h2><?= $recupTournoisFetch['titre'] ?></h2>
+            <p><?= $recupTournoisFetch['descr']?></p>
+            <p>1er prix : <?= $recupTournoisFetch['1prix']?></p>
+            <p>2eme prix : <?= $recupTournoisFetch['2prix']?></p>
+            <p>3eme prix : <?= $recupTournoisFetch['3prix']?></p>
+            <section id="lien">
+                <p>Copier le lien et envoyez le à vos amis ! :</p>
+                <input type="text" value="futur lien + oneTournois.php?id=<?=$_GET['id']?>">
+            </section>
         </section>
-        <section class="Row_style">
+        <section class="Row_style" id="arbrorito">
             <div class="Column">
-                <div class="equipe"><?= $recupTournoisFetch['equipe1'] ?><form action="#" method="post"><?php if($monTournoi == true){?><input type="submit" value="🏆" name="1"><?php } ?></form></div>
-                <div class="equipe"><?= $recupTournoisFetch['equipe2'] ?><form action="#" method="post"><?php if($monTournoi == true){?><input type="submit" value="🏆" name="2"><?php } ?></form></div>
+                <div class="equipe"><?= $recupTournoisFetch['equipe1'] ?><form action="#arbrorito" method="post"><?php if($monTournoi == true){?><input type="submit" value="🏆" name="1"><?php } ?></form></div>
+                <div class="equipe"><?= $recupTournoisFetch['equipe2'] ?><form action="#arbrorito" method="post"><?php if($monTournoi == true){?><input type="submit" value="🏆" name="2"><?php } ?></form></div>
                 <br>
-                <div class="equipe"><?= $recupTournoisFetch['equipe3'] ?><form action="#" method="post"><?php if($monTournoi == true){?><input type="submit" value="🏆" name="3"><?php } ?></form></div>
-                <div class="equipe"><?= $recupTournoisFetch['equipe4'] ?><form action="#" method="post"><?php if($monTournoi == true){?><input type="submit" value="🏆" name="4"><?php } ?></form></div>
+                <div class="equipe"><?= $recupTournoisFetch['equipe3'] ?><form action="#arbrorito" method="post"><?php if($monTournoi == true){?><input type="submit" value="🏆" name="3"><?php } ?></form></div>
+                <div class="equipe"><?= $recupTournoisFetch['equipe4'] ?><form action="#arbrorito" method="post"><?php if($monTournoi == true){?><input type="submit" value="🏆" name="4"><?php } ?></form></div>
             </div>
             <div class="Column">
-                <div class="equipe"><?= $recupTournoisFetch['vainqueur1'] ?><form action="#" method="post"><?php if($monTournoi == true){?><input type="submit" value="🏆" name="5"><?php } ?></form></div>
-                <div class="equipe"><?= $recupTournoisFetch['vainqueur2'] ?><form action="#" method="post"><?php if($monTournoi == true){?><input type="submit" value="🏆" name="6"><?php } ?></form></div>
+                <div class="equipe"><?= $recupTournoisFetch['vainqueur1'] ?><form action="#arbrorito" method="post"><?php if($monTournoi == true){?><input type="submit" value="🏆" name="5"><?php } ?></form></div>
+                <div class="equipe"><?= $recupTournoisFetch['vainqueur2'] ?><form action="#arbrorito" method="post"><?php if($monTournoi == true){?><input type="submit" value="🏆" name="6"><?php } ?></form></div>
             </div>
             <div class="Column">
                 <div class="equipe"><?= $recupTournoisFetch['vainqueur3'] ?></div>
             </div>
         </section>
-        <section id="lien">
-            <p>Copier le lien et envoyez le à vos amis ! :</p>
-            <input type="text" value="futur lien + oneTournois.php?id=<?=$_GET['id']?>">
-        </section>
+        
     </main>
 
 
@@ -103,6 +108,10 @@ if($_SESSION['pseudo'] == $recupTournoisFetch['createur']) {
     Site::footerSite();
     Site::scripts();
     ?>
+
+    <script>
+
+    </script>
 </body>
 <style>
 
