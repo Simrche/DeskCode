@@ -42,7 +42,7 @@ $ajoutTournois = $bdd->prepare("INSERT INTO tournois4(titre, jeu, equipe1, equip
     <div id="BrackForm">
         <?php if (isset($_SESSION['pseudo'])) { ?>
             <?php
-            BracketForm::form()
+                BracketForm::form()
             ?>
     </div>
     </div>

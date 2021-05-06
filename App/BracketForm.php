@@ -12,7 +12,7 @@ class BracketForm extends Site
 
     public static function form()
     { ?>
-        <form action="ListTournois.php" method="post">
+        <form action="redirection.php" method="post">
                 <div>
                     <label for="">Titre : </label><input type="text" name="titre">
 
