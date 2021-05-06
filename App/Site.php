@@ -96,8 +96,11 @@ abstract class Site
                 <button class="closeBut"><i class="fas fa-times fa-2x"></i></button>
                 <h2>Acces interdit</h2>
                 <p>Pour acceder à cette page vous devez être connecter</p>
-                <button class="subBut connectFromForbid signUpBut">Se conneter</button>
-                
+                <div class="redirectLog">
+                    <button class="subBut connectFromForbid logInBut">Se connecter</button>
+                    <button class="subBut connectFromForbid signUpBut">Créer un compte</button>
+                </div>
+
             </section>
         </article>
     <?php }
