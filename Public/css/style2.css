@@ -724,8 +724,6 @@ footer {
 }
 
 /*# sourceMappingURL=style2.css.map */
-<<<<<<< HEAD
-=======
 
 
 @media screen and (max-width:769px) {
@@ -744,7 +742,7 @@ footer {
   }
 
   #log{
-    margin-right: 50px;
+    margin-right: 100px;
   }
 
   #log .logButs{
@@ -805,6 +803,72 @@ footer {
     height: 100%;
   }
 
+  footer{
+    margin-top: 80%;
+  }
+
+  .dark-theme #BrackList,.light-theme #BrackList{
+    width: 130%;
+  }
+
+  .dark-theme #allGame .optionsBra section,.light-theme #allGame .optionsBra section{
+    width: 50%;
+  }
+
+  .dark-theme #allGame .optionsBra section a, .dark-theme .forbidenAccess p,.light-theme #allGame .optionsBra section a, .light-theme .forbidenAccess p{
+    font-size: 30px;
+  }
+
+  .dark-theme #log .logOutBut input, .dark-theme .SendBut input,.light-theme #log .logOutBut input, .light-theme .SendBut input{
+    font-size: 25px;
+  }
+
+  #log section p{
+    font-size: 30px;
+  }
+
+  .dark-theme #BrackList .BrackCard,.light-theme #BrackList .BrackCard{
+    padding: 50px;
+  }
+
+  #BrackList .BrackCard h2,#BrackList .BrackCard .BrackMakerBlock .BrackAuth {
+    
+    font-size: 40px;
+  }
+
+  #BrackList h1{
+    font-size: 50px;
+  }
+
+  #BrackList .BrackCard .BrackDesc{
+    font-size: 30px;
+  }
+
+  .Row_style{
+    margin-left: 100px;
+  }
+
+  .Row_style .Column div{
+    width: 200px;
+    height: 80px;
+    font-size: 40px;
+  }
+
+  .Row_style .Column{
+    width: 50%;
+  }
+
+  p{
+    font-size: 45px;
+  }
+
+  .dark-theme #BrackForm,.light-theme #BrackForm{
+    width: 120%;
+  }
+
+  #BrackForm form div label, #BrackForm form div input, #BrackForm form div select{
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width:376px)
@@ -825,6 +889,23 @@ footer {
 
   #allGame{
     height: 1000px;
+    font-size: 40px;
+  }
+
+  article#log{
+    margin-right: 120px;
+  }
+
+  #log section p{
+    font-size: 30px;
+  }
+
+  .dark-theme #BrackList,.light-theme #BrackList{
+    width: 260%;
+  }
+
+  .dark-theme #log .logInBut, .dark-theme #log .signUpBut, .dark-theme #log .logOutBut, .dark-theme #log .logOutBut input, .dark-theme .SendBut input,.light-theme #log .logInBut, .light-theme #log .signUpBut, .light-theme #log .logOutBut, .light-theme #log .logOutBut input, .light-theme .SendBut input{
+    font-size: 25px;
   }
 
   #allGame h2{
@@ -875,5 +956,57 @@ footer {
     height: 100%;
   }
 
+  .dark-theme header .LDswitch,.light-theme header .LDswitch {
+    width: 20%;
+  }
+
+  .dark-theme #BrackList .BrackCard,.light-theme #BrackList .BrackCard{
+    padding: 50px;
+  }
+
+  #BrackList h1,#BrackList .BrackCard h2{
+    font-size: 50px;
+  }
+
+  #BrackList .BrackCard .BrackMakerBlock .BrackAuth{
+    font-size: 40px;
+  }
+
+  #BrackList .BrackCard .BrackDesc{
+    font-size: 30px;
+  }
+
+  footer{
+    margin-top: 245%;
+  }
+
+  .Row_style{
+    margin-left: 100px;
+  }
+
+  .Row_style .Column div{
+    width: 200px;
+    height: 80px;
+    font-size: 40px;
+  }
+
+  .Row_style .Column{
+    width: 50%;
+  }
+
+  p{
+    font-size: 45px;
+  }
+
+  .dark-theme #BrackForm, .light-theme #BrackForm{
+    width: 260%;
+  }
+
+  #BrackForm form div label, #BrackForm form div input, #BrackForm form div select{
+    font-size: 44px;
+  }
+
+  .dark-theme #BrackForm input, .dark-theme #BrackForm textarea, .dark-theme #BrackForm select,.light-theme #BrackForm input, .light-theme #BrackForm textarea, .light-theme #BrackForm select{
+    font-size: 25px;
+  }
 }
->>>>>>> reponsive
