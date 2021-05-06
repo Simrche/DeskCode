@@ -48,15 +48,17 @@ SignInC::deconnexionU();
                 Et ce n’est qu’un début… Venez agrandir les rangs de l’association si vous vous sentez l’âme d’un passionné.
             </p>
         </article>
+        <?php if (!empty($_SESSION['pseudo'])) { ?>
+            <article id="allGame">
+                <h2>Les Jeux</h2>
 
-        <article id="allGame">
-            <h2>Les Jeux</h2>
-            <article class="optionsBra">
-                <section><a href="BracketForm.php">Création de Bracket</a></section>
-                <section><a href="ListTournois.php">Mes tournois</a></section>
+                <article class="optionsBra">
+                    <section><a href="BracketForm.php">Création de Bracket</a></section>
+                    <section><a href="ListTournois.php">Mes tournois</a></section>
+                </article>
+
             </article>
-
-        </article>
+        <?php } ?>
     </main>
 
 

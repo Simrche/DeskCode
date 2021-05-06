@@ -87,12 +87,7 @@ abstract class Site
         </footer>
     <?php
     }
-
-    public static function forbiden()
-    {
-        
-    }
-
+    
     public static function scripts()
     {
     ?>
