@@ -869,6 +869,20 @@ footer {
   #BrackForm form div label, #BrackForm form div input, #BrackForm form div select{
     font-size: 25px;
   }
+
+  .signForm .subBut, .forbidenPopUp .subBut, .logForm .subBut{
+    height: 100%;
+    width: 80%;
+    font-size: 30px;
+  }
+
+  .forbidenPopUp{
+    width: 75%;
+  }
+
+  .signUpBg, .logInBg, .forbidenPopUpBg{
+    height: 150vh;
+  }
 }
 
 @media screen and (max-width:376px)
@@ -1008,5 +1022,24 @@ footer {
 
   .dark-theme #BrackForm input, .dark-theme #BrackForm textarea, .dark-theme #BrackForm select,.light-theme #BrackForm input, .light-theme #BrackForm textarea, .light-theme #BrackForm select{
     font-size: 25px;
+  }
+
+  .signUpBg, .logInBg, .forbidenPopUpBg{
+    height: 300vh;
+  }
+
+  .forbidenPopUp{
+    width: 75%;
+    height: 30%;
+  }
+
+  h2{
+    font-size: 60px;
+  }
+
+  .signForm .subBut, .forbidenPopUp .subBut, .logForm .subBut{
+    height: 200%;
+    width: 80%;
+    font-size: 30px;
   }
 }
