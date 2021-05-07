@@ -56,7 +56,7 @@ SignInC::deconnexionU();
         </article>
         <?php if (!empty($_SESSION['pseudo'])) { ?>
             <article id="allGame">
-                <h2>Les Jeux</h2>
+                <h2>Mes tournois</h2>
 
                 <article class="optionsBra">
                     <section><a href="BracketForm.php">Création de Bracket</a></section>
