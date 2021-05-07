@@ -67,7 +67,7 @@ SignInC::deconnexionU();
         <?php } else { ?>
 
             <article id="allGame">
-                <h2>Les Jeux</h2>
+                <h2>Tournois</h2>
 
                 <article class="optionsBra">
                     <section class="forbidenAccess">
